@@ -118,6 +118,7 @@ store_x sp, 0 ( t0 )             /* Write sp to first TCB member. */
    .macro portcontextSAVE_EXCEPTION_CONTEXT
 portcontextSAVE_CONTEXT_INTERNAL
 csrr a0, mcause
+and a0, a0, 0xff
 csrr a1, mepc
 addi a1, a1, 4          /* Synchronous so update exception return address to the instruction after the instruction that generated the exception. */
 store_x a1, 0 ( sp )    /* Save updated exception return address. */

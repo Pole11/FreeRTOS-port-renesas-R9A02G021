@@ -306,6 +306,7 @@ void nvect_function(void)
 
 };
 
+
 //void nvect_function(void)
 //{
 //    /* Check the contents of mcause and implement a process to branch to the appropriate process
@@ -323,6 +324,11 @@ void nmi_handler(void)
 void initialize_vect(void)
 {
     R_CPU_AUX->NMIADDR = (uint32_t)nmi_handler;
+
+    /* Start user code*/
+    //asm("csrw clicintattr, 0x1");
+    /* End user code*/
+
     /* The mtvec register must be set even if the interrupt vector table is not used. */
     /* Set the value (address of nvect_function()(0x1C0) >> 6)  to mtvec[31:6] */
     /* mtvec.BASE = 0x07; */

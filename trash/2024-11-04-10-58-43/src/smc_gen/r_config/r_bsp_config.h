@@ -381,7 +381,7 @@ NOTE: When this bit is set to 0, it cannot be changed to 1.
 #define BSP_CFG_MACHINE_TIMER_MODE (1)
 
 /* Machine timer interval value */
-#define BSP_CFG_MTIME_INTERVAL_VALUE (100)
+#define BSP_CFG_MTIME_INTERVAL_VALUE (1000)
 
 /* Interval value unit
  1          : count
@@ -389,7 +389,7 @@ NOTE: When this bit is set to 0, it cannot be changed to 1.
  1000000    : us
  1000000000 : ns
 */
-#define BSP_CFG_MTIME_INTERVAL_UNIT (1000)
+#define BSP_CFG_MTIME_INTERVAL_UNIT (1)
 
 /* Machine timer interrupt priority
  0xFF: Level 0 (high)

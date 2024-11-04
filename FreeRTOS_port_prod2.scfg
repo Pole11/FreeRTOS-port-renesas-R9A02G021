@@ -1060,8 +1060,8 @@
                 <gridItem id="BSP_CFG_MACHINE_TIMER" selectedIndex="1"/>
                 <gridItem id="BSP_CFG_MTIME_CLOCK_SOURCE" selectedIndex="1"/>
                 <gridItem id="BSP_CFG_MACHINE_TIMER_MODE" selectedIndex="1"/>
-                <gridItem id="BSP_CFG_MTIME_INTERVAL_VALUE" selectedIndex="1000"/>
-                <gridItem id="BSP_CFG_MTIME_INTERVAL_UNIT" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_MTIME_INTERVAL_VALUE" selectedIndex="100"/>
+                <gridItem id="BSP_CFG_MTIME_INTERVAL_UNIT" selectedIndex="1"/>
                 <gridItem id="BSP_CFG_MTIP_PRIORITY" selectedIndex="15"/>
                 <gridItem id="BSP_CFG_SOFTWARE_INTERRUPT" selectedIndex="1"/>
                 <gridItem id="BSP_CFG_MSIP_PRIORITY" selectedIndex="15"/>

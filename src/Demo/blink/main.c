@@ -2,7 +2,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-volatile uint32_t blinkDelay = 1000; // Initial blink delay of 1 second (1 Hz)
+volatile uint32_t blinkDelay = 1000;
 int iteration = 0;
 extern volatile void freertos_vector_table(void);
 extern volatile void freertos_risc_v_trap_handler(void);
@@ -26,10 +26,10 @@ void vTaskFunction1(void *pvParameters) {
 int main(void)
 {
     /* Setup and start the machine timer */
-    asm volatile ( "csrw mtvec, %0" : : "r" ( ( uintptr_t ) freertos_vector_table | 0x01 ));
+    //asm volatile ( "csrw mtvec, %0" : : "r" ( ( uintptr_t ) freertos_vector_table | 0x01 ));
 
     /* Start SW Interrupt */
-    R_Config_ICU_IRQ4_Start();
+    //R_Config_ICU_IRQ4_Start();
 
 	/* Create the task(s) */
     int taskReturnValue1 = xTaskCreate(

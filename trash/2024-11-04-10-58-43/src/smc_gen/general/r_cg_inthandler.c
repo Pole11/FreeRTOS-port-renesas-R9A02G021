@@ -40,7 +40,7 @@ extern void freertos_risc_v_mtimer_interrupt_handler;
 /*
  * INT_ACLINT_MSIP (0x00)
  */
-void INT_ACLINT_MSIP(void)
+__attribute__((naked)) void INT_ACLINT_MSIP(void)
 {
     /* Start user code for INT_ACLINT_MSIP. Do not edit comment generated here */
 	asm("j freertos_risc_v_mtimer_interrupt_handler");
@@ -50,7 +50,7 @@ void INT_ACLINT_MSIP(void)
 /*
  * INT_ACLINT_MTIP (0x1C)
  */
-void INT_ACLINT_MTIP(void)
+__attribute__((naked)) void INT_ACLINT_MTIP(void)
 {
     /* Start user code for INT_ACLINT_MTIP. Do not edit comment generated here */
 	asm("j freertos_risc_v_mtimer_interrupt_handler");
@@ -60,7 +60,7 @@ void INT_ACLINT_MTIP(void)
 /*
  * INT_IELSR0 (0x4C)
  */
-void INT_IELSR0(void)
+__attribute__((naked)) void INT_IELSR0(void)
 {
     /* Start user code for INT_IELSR0. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -70,7 +70,7 @@ void INT_IELSR0(void)
 /*
  * INT_IELSR1 (0x50)
  */
-void INT_IELSR1(void)
+__attribute__((naked)) void INT_IELSR1(void)
 {
     /* Start user code for INT_IELSR1. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -80,7 +80,7 @@ void INT_IELSR1(void)
 /*
  * INT_IELSR2 (0x54)
  */
-void INT_IELSR2(void)
+__attribute__((naked)) void INT_IELSR2(void)
 {
     /* Start user code for INT_IELSR2. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -90,7 +90,7 @@ void INT_IELSR2(void)
 /*
  * INT_IELSR3 (0x58)
  */
-void INT_IELSR3(void)
+__attribute__((naked)) void INT_IELSR3(void)
 {
     /* Start user code for INT_IELSR3. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -100,7 +100,7 @@ void INT_IELSR3(void)
 /*
  * INT_IELSR4 (0x5C)
  */
-void INT_IELSR4(void)
+__attribute__((naked)) void INT_IELSR4(void)
 {
     /* Start user code for INT_IELSR4. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -110,7 +110,7 @@ void INT_IELSR4(void)
 /*
  * INT_IELSR5 (0x60)
  */
-void INT_IELSR5(void)
+__attribute__((naked)) void INT_IELSR5(void)
 {
     /* Start user code for INT_IELSR5. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -120,7 +120,7 @@ void INT_IELSR5(void)
 /*
  * INT_IELSR6 (0x64)
  */
-void INT_IELSR6(void)
+__attribute__((naked)) void INT_IELSR6(void)
 {
     /* Start user code for INT_IELSR6. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -130,7 +130,7 @@ void INT_IELSR6(void)
 /*
  * INT_IELSR7 (0x68)
  */
-void INT_IELSR7(void)
+__attribute__((naked)) void INT_IELSR7(void)
 {
     /* Start user code for INT_IELSR7. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -140,7 +140,7 @@ void INT_IELSR7(void)
 /*
  * INT_IELSR8 (0x6C)
  */
-void INT_IELSR8(void)
+__attribute__((naked)) void INT_IELSR8(void)
 {
     /* Start user code for INT_IELSR8. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -150,7 +150,7 @@ void INT_IELSR8(void)
 /*
  * INT_IELSR9 (0x70)
  */
-void INT_IELSR9(void)
+__attribute__((naked)) void INT_IELSR9(void)
 {
     /* Start user code for INT_IELSR9. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -160,7 +160,7 @@ void INT_IELSR9(void)
 /*
  * INT_IELSR10 (0x74)
  */
-void INT_IELSR10(void)
+__attribute__((naked)) void INT_IELSR10(void)
 {
     /* Start user code for INT_IELSR10. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -170,7 +170,7 @@ void INT_IELSR10(void)
 /*
  * INT_IELSR11 (0x78)
  */
-void INT_IELSR11(void)
+__attribute__((naked)) void INT_IELSR11(void)
 {
     /* Start user code for INT_IELSR11. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -180,7 +180,7 @@ void INT_IELSR11(void)
 /*
  * INT_IELSR12 (0x7C)
  */
-void INT_IELSR12(void)
+__attribute__((naked)) void INT_IELSR12(void)
 {
     /* Start user code for INT_IELSR12. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -190,7 +190,7 @@ void INT_IELSR12(void)
 /*
  * INT_IELSR13 (0x80)
  */
-void INT_IELSR13(void)
+__attribute__((naked)) void INT_IELSR13(void)
 {
     /* Start user code for INT_IELSR13. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -200,7 +200,7 @@ void INT_IELSR13(void)
 /*
  * INT_IELSR14 (0x84)
  */
-void INT_IELSR14(void)
+__attribute__((naked)) void INT_IELSR14(void)
 {
     /* Start user code for INT_IELSR14. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -210,7 +210,7 @@ void INT_IELSR14(void)
 /*
  * INT_IELSR15 (0x88)
  */
-void INT_IELSR15(void)
+__attribute__((naked)) void INT_IELSR15(void)
 {
     /* Start user code for INT_IELSR15. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -220,7 +220,7 @@ void INT_IELSR15(void)
 /*
  * INT_IELSR16 (0x8C)
  */
-void INT_IELSR16(void)
+__attribute__((naked)) void INT_IELSR16(void)
 {
     /* Start user code for INT_IELSR16. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -230,7 +230,7 @@ void INT_IELSR16(void)
 /*
  * INT_IELSR17 (0x90)
  */
-void INT_IELSR17(void)
+__attribute__((naked)) void INT_IELSR17(void)
 {
     /* Start user code for INT_IELSR17. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -240,7 +240,7 @@ void INT_IELSR17(void)
 /*
  * INT_IELSR18 (0x94)
  */
-void INT_IELSR18(void)
+__attribute__((naked)) void INT_IELSR18(void)
 {
     /* Start user code for INT_IELSR18. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -250,7 +250,7 @@ void INT_IELSR18(void)
 /*
  * INT_IELSR19 (0x98)
  */
-void INT_IELSR19(void)
+__attribute__((naked)) void INT_IELSR19(void)
 {
     /* Start user code for INT_IELSR19. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -260,7 +260,7 @@ void INT_IELSR19(void)
 /*
  * INT_IELSR20 (0x9C)
  */
-void INT_IELSR20(void)
+__attribute__((naked)) void INT_IELSR20(void)
 {
     /* Start user code for INT_IELSR20. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -270,7 +270,7 @@ void INT_IELSR20(void)
 /*
  * INT_IELSR21 (0xA0)
  */
-void INT_IELSR21(void)
+__attribute__((naked)) void INT_IELSR21(void)
 {
     /* Start user code for INT_IELSR21. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -280,7 +280,7 @@ void INT_IELSR21(void)
 /*
  * INT_IELSR22 (0xA4)
  */
-void INT_IELSR22(void)
+__attribute__((naked)) void INT_IELSR22(void)
 {
     /* Start user code for INT_IELSR22. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -290,7 +290,7 @@ void INT_IELSR22(void)
 /*
  * INT_IELSR23 (0xA8)
  */
-void INT_IELSR23(void)
+__attribute__((naked)) void INT_IELSR23(void)
 {
     /* Start user code for INT_IELSR23. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -300,7 +300,7 @@ void INT_IELSR23(void)
 /*
  * INT_IELSR24 (0xAC)
  */
-void INT_IELSR24(void)
+__attribute__((naked)) void INT_IELSR24(void)
 {
     /* Start user code for INT_IELSR24. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -310,7 +310,7 @@ void INT_IELSR24(void)
 /*
  * INT_IELSR25 (0xB0)
  */
-void INT_IELSR25(void)
+__attribute__((naked)) void INT_IELSR25(void)
 {
     /* Start user code for INT_IELSR25. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -320,7 +320,7 @@ void INT_IELSR25(void)
 /*
  * INT_IELSR26 (0xB4)
  */
-void INT_IELSR26(void)
+__attribute__((naked)) void INT_IELSR26(void)
 {
     /* Start user code for null. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -330,7 +330,7 @@ void INT_IELSR26(void)
 /*
  * INT_IELSR27 (0xB8)
  */
-void INT_IELSR27(void)
+__attribute__((naked)) void INT_IELSR27(void)
 {
     /* Start user code for INT_IELSR27. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -340,7 +340,7 @@ void INT_IELSR27(void)
 /*
  * INT_IELSR28 (0xBC0)
  */
-void INT_IELSR28(void)
+__attribute__((naked)) void INT_IELSR28(void)
 {
     /* Start user code for INT_IELSR28. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -350,7 +350,7 @@ void INT_IELSR28(void)
 /*
  * INT_IELSR29 (0xC0)
  */
-void INT_IELSR29(void)
+__attribute__((naked)) void INT_IELSR29(void)
 {
     /* Start user code for INT_IELSR29. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -360,7 +360,7 @@ void INT_IELSR29(void)
 /*
  * INT_IELSR30 (0xC4)
  */
-void INT_IELSR30(void)
+__attribute__((naked)) void INT_IELSR30(void)
 {
     /* Start user code for INT_IELSR30. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -370,7 +370,7 @@ void INT_IELSR30(void)
 /*
  * INT_IELSR31 (0xC8)
  */
-void INT_IELSR31(void)
+__attribute__((naked)) void INT_IELSR31(void)
 {
     /* Start user code for INT_IELSR31. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");
@@ -380,7 +380,7 @@ void INT_IELSR31(void)
 /*
  * INT_DUMMY for reserved interrupt source
  */
-void INT_DUMMY(void)
+__attribute__((naked)) void INT_DUMMY(void)
 {
     /* Start user code for INT_DUMMY. Do not edit comment generated here */
 	asm("j freertos_risc_v_interrupt_handler");

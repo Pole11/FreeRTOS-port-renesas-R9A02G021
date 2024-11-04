@@ -2,15 +2,15 @@
 * DISCLAIMER
 * This software is supplied by Renesas Electronics Corporation and is only intended for use with Renesas products.
 * No other uses are authorized. This software is owned by Renesas Electronics Corporation and is protected under all
-* applicable laws, including copyright laws.
+* applicable laws, including copyright laws. 
 * THIS SOFTWARE IS PROVIDED "AS IS" AND RENESAS MAKES NO WARRANTIES REGARDING THIS SOFTWARE, WHETHER EXPRESS, IMPLIED
 * OR STATUTORY, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
 * NON-INFRINGEMENT.  ALL SUCH WARRANTIES ARE EXPRESSLY DISCLAIMED.TO THE MAXIMUM EXTENT PERMITTED NOT PROHIBITED BY
 * LAW, NEITHER RENESAS ELECTRONICS CORPORATION NOR ANY OF ITS AFFILIATED COMPANIES SHALL BE LIABLE FOR ANY DIRECT,
 * INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES FOR ANY REASON RELATED TO THIS SOFTWARE, EVEN IF RENESAS OR
 * ITS AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-* Renesas reserves the right, without notice, to make changes to this software and to discontinue the availability
-* of this software. By using this software, you agree to the additional terms and conditions found by accessing the
+* Renesas reserves the right, without notice, to make changes to this software and to discontinue the availability 
+* of this software. By using this software, you agree to the additional terms and conditions found by accessing the 
 * following link:
 * http://www.renesas.com/disclaimer
 *
@@ -22,13 +22,14 @@
 * Version          : 1.0.30
 * Device(s)        : R9A02G0214CNE
 * Description      : None
-* Creation Date    :
+* Creation Date    : 
 ***********************************************************************************************************************/
 
 #include "r_cg_macrodriver.h"
 #include "r_cg_userdefine.h"
 
 /* Start user code */
+extern void freertos_risc_v_interrupt_handler( void );
 extern void freertos_risc_v_exception_handler( void );
 extern void freertos_risc_v_mtimer_interrupt_handler( void );
 /* End user code */
@@ -42,277 +43,270 @@ const void * gp_Vectors[] VECT_SECT = {
 /*
  * Reserved (0x00)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x04)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x08)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * INT_ACLINT_MSIP (0x0C)
  */
-    freertos_risc_v_mtimer_interrupt_handler,
+    INT_ACLINT_MSIP,
 
 /*
  * Reserved (0x10)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x14)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x18)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * INT_ACLINT_MTIP (0x1C)
  */
-    freertos_risc_v_mtimer_interrupt_handler,
+    INT_ACLINT_MTIP,
 
 /*
  * Reserved (0x20)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x24)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x28)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x2C)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x30)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x34)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x38)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x3C)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x40)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x44)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * Reserved (0x48)
  */
-    freertos_risc_v_exception_handler,
+    INT_DUMMY,
 
 /*
  * INT_IELSR0 (0x4C)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR0,
 
 /*
  * INT_IELSR1 (0x50)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR1,
 
 /*
  * INT_IELSR2 (0x54)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR2,
 
 /*
  * INT_IELSR3 (0x58)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR3,
 
 /*
  * INT_IELSR4 (0x5C)
  */
-    freertos_risc_v_exception_handler,
+    r_Config_ICU_irq4_interrupt,
 
 /*
  * INT_IELSR5 (0x60)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR5,
 
 /*
  * INT_IELSR6 (0x64)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR6,
 
 /*
  * INT_IELSR7 (0x68)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR7,
 
 /*
  * INT_IELSR8 (0x6C)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR8,
 
 /*
  * INT_IELSR9 (0x70)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR9,
 
 /*
  * INT_IELSR10 (0x74)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR10,
 
 /*
  * INT_IELSR11 (0x78)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR11,
 
 /*
  * INT_IELSR12 (0x7C)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR12,
 
 /*
  * INT_IELSR13 (0x80)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR13,
 
 /*
  * INT_IELSR14 (0x84)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR14,
 
 /*
  * INT_IELSR15 (0x88)
  */
-    freertos_risc_v_exception_handler,
+    r_Config_ADC_interrupt,
 
 /*
  * INT_IELSR16 (0x8C)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR16,
 
 /*
  * INT_IELSR17 (0x90)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR17,
 
 /*
  * INT_IELSR18 (0x94)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR18,
 
 /*
  * INT_IELSR19 (0x98)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR19,
 
 /*
  * INT_IELSR20 (0x9C)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR20,
 
 /*
  * INT_IELSR21 (0xA0)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR21,
 
 /*
  * INT_IELSR22 (0xA4)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR22,
 
 /*
  * INT_IELSR23 (0xA8)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR23,
 
 /*
  * INT_IELSR24 (0xAC)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR24,
 
 /*
  * INT_IELSR25 (0xB0)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR25,
 
 /*
  * INT_IELSR26 (0xB4)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR26,
 
 /*
  * INT_IELSR27 (0xB8)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR27,
 
 /*
  * INT_IELSR28 (0xBC)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR28,
 
 /*
  * INT_IELSR29 (0xC0)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR29,
 
 /*
  * INT_IELSR30 (0xC4)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR30,
 
 /*
  * INT_IELSR31 (0xC8)
  */
-    freertos_risc_v_exception_handler,
+    INT_IELSR31,
 };
-#define EXVECT_SECT          __attribute__ ((section (".nvect"))) __attribute__((naked)) __attribute__((used))
-
-void nvect_function(void) EXVECT_SECT;
+#define EXVECT_SECT          __attribute__ ((section (".nvect")))
+const void * gp_ExceptVectors[] EXVECT_SECT = {
+    nvect_function
+};
 
 void nvect_function(void)
-
 {
-
-    asm( "j freertos_risc_v_exception_handler" );
-
+    /* Check the contents of mcause and implement a process to branch to the appropriate process
+       after determining what happened. */
+    /* Start user code for nvect_function. Do not edit comment generated here */
+    /* End user code. Do not edit comment generated here */
 };
-
-//void nvect_function(void)
-//{
-//    /* Check the contents of mcause and implement a process to branch to the appropriate process
-//       after determining what happened. */
-//    /* Start user code for nvect_function. Do not edit comment generated here */
-//    /* End user code. Do not edit comment generated here */
-//};
 
 void nmi_handler(void)
 {

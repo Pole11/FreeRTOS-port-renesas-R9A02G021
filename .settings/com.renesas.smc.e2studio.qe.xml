@@ -45,8 +45,8 @@
             <Setting id="BSP_CFG_USER_WARM_START_PRE_C_FUNCTION" value="my_sw_warmstart_prec_function"/>
             <Setting id="BSP_CFG_PARAM_CHECKING_ENABLE" value="1"/>
             <Setting id="BSP_CFG_STARTUP_FUNCTIONS" value="0"/>
-            <Setting id="BSP_CFG_MTIME_INTERVAL_UNIT" value="1"/>
-            <Setting id="BSP_CFG_MTIME_INTERVAL_VALUE" value="1000"/>
+            <Setting id="BSP_CFG_MTIME_INTERVAL_UNIT" value="1000"/>
+            <Setting id="BSP_CFG_MTIME_INTERVAL_VALUE" value="100"/>
             <Setting id="BSP_CFG_USER_WARM_START_CALLBACK_PRE_INITC_ENABLED" value="0"/>
             <Setting id="BSP_CFG_MACHINE_TIMER" value="1"/>
             <Setting id="BSP_CFG_ENAACWD_REG_DISABLE" value="1"/>

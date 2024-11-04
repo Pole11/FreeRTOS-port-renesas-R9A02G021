@@ -29,6 +29,7 @@
 #include "r_cg_userdefine.h"
 
 /* Start user code */
+extern void freertos_risc_v_interrupt_handler( void );
 extern void freertos_risc_v_exception_handler( void );
 extern void freertos_risc_v_mtimer_interrupt_handler( void );
 /* End user code */
@@ -294,25 +295,19 @@ const void * gp_Vectors[] VECT_SECT = {
  */
     freertos_risc_v_exception_handler,
 };
-#define EXVECT_SECT          __attribute__ ((section (".nvect"))) __attribute__((naked)) __attribute__((used))
-
-void nvect_function(void) EXVECT_SECT;
-
-void nvect_function(void)
-
-{
-
-    asm( "j freertos_risc_v_exception_handler" );
-
+#define EXVECT_SECT          __attribute__ ((section (".nvect")))
+const void * gp_ExceptVectors[] EXVECT_SECT = {
+	//nvect_function,
+    freertos_risc_v_exception_handler
 };
 
-//void nvect_function(void)
-//{
-//    /* Check the contents of mcause and implement a process to branch to the appropriate process
-//       after determining what happened. */
-//    /* Start user code for nvect_function. Do not edit comment generated here */
-//    /* End user code. Do not edit comment generated here */
-//};
+void nvect_function(void)
+{
+    /* Check the contents of mcause and implement a process to branch to the appropriate process
+       after determining what happened. */
+    /* Start user code for nvect_function. Do not edit comment generated here */
+    /* End user code. Do not edit comment generated here */
+};
 
 void nmi_handler(void)
 {
