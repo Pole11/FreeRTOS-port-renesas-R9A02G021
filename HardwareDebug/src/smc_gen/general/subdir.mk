@@ -7,7 +7,6 @@ C_SRCS += \
 ../src/smc_gen/general/r_cg_ad_common.c \
 ../src/smc_gen/general/r_cg_inthandler.c \
 ../src/smc_gen/general/r_cg_systeminit.c \
-../src/smc_gen/general/r_cg_vect_table.c \
 ../src/smc_gen/general/r_smc_cgc.c \
 ../src/smc_gen/general/r_smc_cgc_user.c \
 ../src/smc_gen/general/r_smc_interrupt.c 
@@ -19,7 +18,6 @@ C_DEPS += \
 ./src/smc_gen/general/r_cg_ad_common.d \
 ./src/smc_gen/general/r_cg_inthandler.d \
 ./src/smc_gen/general/r_cg_systeminit.d \
-./src/smc_gen/general/r_cg_vect_table.d \
 ./src/smc_gen/general/r_smc_cgc.d \
 ./src/smc_gen/general/r_smc_cgc_user.d \
 ./src/smc_gen/general/r_smc_interrupt.d 
@@ -28,7 +26,6 @@ OBJS += \
 ./src/smc_gen/general/r_cg_ad_common.o \
 ./src/smc_gen/general/r_cg_inthandler.o \
 ./src/smc_gen/general/r_cg_systeminit.o \
-./src/smc_gen/general/r_cg_vect_table.o \
 ./src/smc_gen/general/r_smc_cgc.o \
 ./src/smc_gen/general/r_smc_cgc_user.o \
 ./src/smc_gen/general/r_smc_interrupt.o 

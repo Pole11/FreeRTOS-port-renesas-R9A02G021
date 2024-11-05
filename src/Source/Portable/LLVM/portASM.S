@@ -372,6 +372,7 @@ application_interrupt_handler:
     j processed_source
 
 handle_exception:
+    and a0, a0, 0xff
     /* a0 contains mcause. */
     li t0, 11                                   /* 11 == environment call. */
     bne a0, t0, application_exception_handler   /* Not an M environment call, so some other exception. */

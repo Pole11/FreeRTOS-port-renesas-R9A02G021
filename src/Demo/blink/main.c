@@ -25,6 +25,11 @@ void vTaskFunction1(void *pvParameters) {
 
 int main(void)
 {
+	//uint32_t volatile a = get_iclk_freq_hz();
+
+//	uint32_t volatile a = 11;
+//	a = a & 0xFFFF;
+
     /* Setup and start the machine timer */
     //asm volatile ( "csrw mtvec, %0" : : "r" ( ( uintptr_t ) freertos_vector_table | 0x01 ));
 
