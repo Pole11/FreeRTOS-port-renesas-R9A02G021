@@ -71,7 +71,7 @@
      800      800       10     4         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_option_settings.o:(.option_osis)
      800      800       10     1                 Option_OSIS
      810      810        0     1 __mdata = .
-     e00      e00     6638   256 .text
+     e00      e00     653c   256 .text
      e00      e00        0     2         ./src/smc_gen/r_pincfg/Pin.o:(.text)
      e00      e00        0     2         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.text)
      e00      e00        0     2         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_mapped_interrupts.o:(.text)
@@ -6634,237 +6634,200 @@
     5d3c     5d3c        0     1                 
     5d3e     5d3e        0     1                 
     5d3e     5d3e        0     1                 
-    5d3e     5d3e       3c     2         ./src/Demo/blink/main.o:(.text.main)
+    5d3e     5d3e       30     2         ./src/Demo/blink/main.o:(.text.main)
     5d3e     5d3e        0     1                 
     5d3e     5d3e        0     1                 
     5d3e     5d3e        0     1                 
-    5d3e     5d3e       3c     1                 main
-    5d46     5d46        0     1                 
-    5d48     5d48        0     1                 
-    5d4a     5d4a        0     1                 
-    5d4e     5d4e        0     1                 
-    5d50     5d50        0     1                 
+    5d3e     5d3e       30     1                 main
+    5d40     5d40        0     1                 
+    5d64     5d64        0     1                 
+    5d64     5d64        0     1                 
+    5d68     5d68        0     1                 
+    5d6c     5d6c        0     1                 .LBB1_2
+    5d6c     5d6c        0     1                 
+    5d6c     5d6c        0     1                 
+    5d6e     5d6e        0     1                 
+    5d6e     5d6e        0     1                 
+    5d6e     5d6e        2     2         ./src/Demo/Common/common.o:(.text.vAssertCalled)
+    5d6e     5d6e        0     1                 
+    5d6e     5d6e        0     1                 
+    5d6e     5d6e        0     1                 .LBB0_1
+    5d6e     5d6e        0     1                 
+    5d6e     5d6e        2     1                 vAssertCalled
     5d70     5d70        0     1                 
     5d70     5d70        0     1                 
+    5d70     5d70        2     2         ./src/Demo/Common/common.o:(.text.vApplicationStackOverflowHook)
+    5d70     5d70        0     1                 
+    5d70     5d70        0     1                 
+    5d70     5d70        0     1                 .LBB1_1
+    5d70     5d70        0     1                 
+    5d70     5d70        2     1                 vApplicationStackOverflowHook
+    5d72     5d72        0     1                 
+    5d72     5d72        0     1                 
+    5d72     5d72        2     2         ./src/Demo/Common/common.o:(.text.vApplicationMallocFailedHook)
+    5d72     5d72        0     1                 
+    5d72     5d72        0     1                 
+    5d72     5d72        0     1                 .LBB2_1
+    5d72     5d72        0     1                 
+    5d72     5d72        2     1                 vApplicationMallocFailedHook
     5d74     5d74        0     1                 
-    5d78     5d78        0     1                 .LBB1_2
+    5d74     5d74        0     1                 
+    5d74     5d74        2     2         ./src/Demo/Common/common.o:(.text.vApplicationTickHook)
+    5d74     5d74        0     1                 
+    5d74     5d74        0     1                 
+    5d74     5d74        0     1                 
+    5d74     5d74        2     1                 vApplicationTickHook
+    5d76     5d76        0     1                 
+    5d76     5d76        2     2         ./src/Demo/Common/common.o:(.text.vApplicationIdleHook)
+    5d76     5d76        0     1                 
+    5d76     5d76        0     1                 
+    5d76     5d76        0     1                 
+    5d76     5d76        2     1                 vApplicationIdleHook
+    5d78     5d78        0     1                 
+    5d78     5d78        2     2         ./src/Demo/Common/common.o:(.text.freertos_risc_v_application_interrupt_handler)
     5d78     5d78        0     1                 
     5d78     5d78        0     1                 
+    5d78     5d78        0     1                 
+    5d78     5d78        2     1                 freertos_risc_v_application_interrupt_handler
+    5d7a     5d7a        0     1                 
+    5d7a     5d7a        2     2         ./src/Demo/Common/common.o:(.text.freertos_risc_v_application_exception_handler)
     5d7a     5d7a        0     1                 
     5d7a     5d7a        0     1                 
-    5d7a     5d7a        2     2         ./src/Demo/Common/common.o:(.text.vAssertCalled)
     5d7a     5d7a        0     1                 
-    5d7a     5d7a        0     1                 
-    5d7a     5d7a        0     1                 .LBB0_1
-    5d7a     5d7a        0     1                 
-    5d7a     5d7a        2     1                 vAssertCalled
+    5d7a     5d7a        2     1                 freertos_risc_v_application_exception_handler
+    5d7c     5d7c        0     1                 
+    5d7c     5d7c       22     2         ./src/Demo/Common/vector_table.o:(.text.initialize_vect)
     5d7c     5d7c        0     1                 
     5d7c     5d7c        0     1                 
-    5d7c     5d7c        2     2         ./src/Demo/Common/common.o:(.text.vApplicationStackOverflowHook)
     5d7c     5d7c        0     1                 
-    5d7c     5d7c        0     1                 
-    5d7c     5d7c        0     1                 .LBB1_1
-    5d7c     5d7c        0     1                 
-    5d7c     5d7c        2     1                 vApplicationStackOverflowHook
-    5d7e     5d7e        0     1                 
-    5d7e     5d7e        0     1                 
-    5d7e     5d7e        2     2         ./src/Demo/Common/common.o:(.text.vApplicationMallocFailedHook)
-    5d7e     5d7e        0     1                 
-    5d7e     5d7e        0     1                 
-    5d7e     5d7e        0     1                 .LBB2_1
-    5d7e     5d7e        0     1                 
-    5d7e     5d7e        2     1                 vApplicationMallocFailedHook
-    5d80     5d80        0     1                 
-    5d80     5d80        0     1                 
-    5d80     5d80        2     2         ./src/Demo/Common/common.o:(.text.vApplicationTickHook)
-    5d80     5d80        0     1                 
-    5d80     5d80        0     1                 
-    5d80     5d80        0     1                 
-    5d80     5d80        2     1                 vApplicationTickHook
-    5d82     5d82        0     1                 
-    5d82     5d82        2     2         ./src/Demo/Common/common.o:(.text.vApplicationIdleHook)
-    5d82     5d82        0     1                 
-    5d82     5d82        0     1                 
-    5d82     5d82        0     1                 
-    5d82     5d82        2     1                 vApplicationIdleHook
-    5d84     5d84        0     1                 
-    5d84     5d84        2     2         ./src/Demo/Common/common.o:(.text.freertos_risc_v_application_interrupt_handler)
-    5d84     5d84        0     1                 
-    5d84     5d84        0     1                 
-    5d84     5d84        0     1                 
-    5d84     5d84        2     1                 freertos_risc_v_application_interrupt_handler
-    5d86     5d86        0     1                 
-    5d86     5d86        2     2         ./src/Demo/Common/common.o:(.text.freertos_risc_v_application_exception_handler)
-    5d86     5d86        0     1                 
-    5d86     5d86        0     1                 
-    5d86     5d86        0     1                 
-    5d86     5d86        2     1                 freertos_risc_v_application_exception_handler
-    5d88     5d88        0     1                 
-    5d88     5d88       22     2         ./src/Demo/Common/vector_table.o:(.text.initialize_vect)
-    5d88     5d88        0     1                 
-    5d88     5d88        0     1                 
-    5d88     5d88        0     1                 
-    5d88     5d88       22     1                 initialize_vect
+    5d7c     5d7c       22     1                 initialize_vect
+    5d8c     5d8c        0     1                 
+    5d90     5d90        0     1                 
+    5d94     5d94        0     1                 
     5d98     5d98        0     1                 
     5d9c     5d9c        0     1                 
+    5d9e     5d9e        0     1                 
+    5d9e     5d9e        0     1                 
+    5d9e     5d9e        2     2         ./src/Demo/Common/vector_table.o:(.text.nmi_handler)
+    5d9e     5d9e        2     1                 nmi_handler
+    5d9e     5d9e        0     1                 
+    5d9e     5d9e        0     1                 
+    5d9e     5d9e        0     1                 
     5da0     5da0        0     1                 
-    5da4     5da4        0     1                 
-    5da8     5da8        0     1                 
-    5daa     5daa        0     1                 
-    5daa     5daa        0     1                 
-    5daa     5daa        2     2         ./src/Demo/Common/vector_table.o:(.text.nmi_handler)
-    5daa     5daa        2     1                 nmi_handler
-    5daa     5daa        0     1                 
-    5daa     5daa        0     1                 
-    5daa     5daa        0     1                 
-    5dac     5dac        0     1                 
-    5dac     5dac      14a     1         ./src/Demo/Common/vector_table_asm.o:(.text.freertos_renesas_risc_v_exception_handler)
-    5dac     5dac        0     1                 
-    5dac     5dac        0     1                 
-    5dac     5dac        0     1                 freertos_renesas_risc_v_exception_handler
-    5db0     5db0        0     1                 
-    5db2     5db2        0     1                 
-    5db4     5db4        0     1                 
-    5db6     5db6        0     1                 
-    5db8     5db8        0     1                 
-    5dba     5dba        0     1                 
-    5dbc     5dbc        0     1                 
-    5dbe     5dbe        0     1                 
-    5dc0     5dc0        0     1                 
-    5dc2     5dc2        0     1                 
-    5dc4     5dc4        0     1                 
-    5dc6     5dc6        0     1                 
-    5dc8     5dc8        0     1                 
-    5dca     5dca        0     1                 
-    5dcc     5dcc        0     1                 
-    5dce     5dce        0     1                 
-    5dd0     5dd0        0     1                 
-    5dd2     5dd2        0     1                 
-    5dd4     5dd4        0     1                 
-    5dd6     5dd6        0     1                 
-    5dd8     5dd8        0     1                 
-    5dda     5dda        0     1                 
-    5ddc     5ddc        0     1                 
-    5dde     5dde        0     1                 
-    5de0     5de0        0     1                 
-    5de2     5de2        0     1                 
-    5de4     5de4        0     1                 
-    5de6     5de6        0     1                 
-    5de8     5de8        0     1                 .Lpcrel_hi0
-    5de8     5de8        0     1                 
-    5df0     5df0        0     1                 
-    5df2     5df2        0     1                 
-    5df6     5df6        0     1                 
-    5df8     5df8        0     1                 .Lpcrel_hi1
-    5df8     5df8        0     1                 
+    5e00     5e00      152   256         ./src/Demo/Common/vector_table_asm.o:(.text.freertos_renesas_risc_v_trap_handler)
     5e00     5e00        0     1                 
+    5e00     5e00        0     1                 
+    5e00     5e00        0     1                 freertos_renesas_risc_v_trap_handler
     5e04     5e04        0     1                 
+    5e06     5e06        0     1                 
     5e08     5e08        0     1                 
+    5e0a     5e0a        0     1                 
     5e0c     5e0c        0     1                 
+    5e0e     5e0e        0     1                 
     5e10     5e10        0     1                 
     5e12     5e12        0     1                 
-    5e14     5e14        0     1                 .Lpcrel_hi2
     5e14     5e14        0     1                 
+    5e16     5e16        0     1                 
+    5e18     5e18        0     1                 
+    5e1a     5e1a        0     1                 
     5e1c     5e1c        0     1                 
     5e1e     5e1e        0     1                 
+    5e20     5e20        0     1                 
     5e22     5e22        0     1                 
-    5e26     5e26        0     1                 .Lpcrel_hi3
+    5e24     5e24        0     1                 
     5e26     5e26        0     1                 
+    5e28     5e28        0     1                 
+    5e2a     5e2a        0     1                 
+    5e2c     5e2c        0     1                 
     5e2e     5e2e        0     1                 
+    5e30     5e30        0     1                 
     5e32     5e32        0     1                 
     5e34     5e34        0     1                 
+    5e36     5e36        0     1                 
     5e38     5e38        0     1                 
     5e3a     5e3a        0     1                 
-    5e3e     5e3e        0     1                 
-    5e40     5e40        0     1                 .Lpcrel_hi4
-    5e40     5e40        0     1                 
-    5e48     5e48        0     1                 
+    5e3c     5e3c        0     1                 .Lpcrel_hi0
+    5e3c     5e3c        0     1                 
+    5e44     5e44        0     1                 
+    5e46     5e46        0     1                 
+    5e4a     5e4a        0     1                 
+    5e4c     5e4c        0     1                 .Lpcrel_hi1
     5e4c     5e4c        0     1                 
-    5e4e     5e4e        0     1                 
-    5e50     5e50        0     1                 
-    5e52     5e52        0     1                 
     5e54     5e54        0     1                 
-    5e56     5e56        0     1                 
     5e58     5e58        0     1                 
-    5e5a     5e5a        0     1                 
     5e5c     5e5c        0     1                 
-    5e5e     5e5e        0     1                 
     5e60     5e60        0     1                 
-    5e62     5e62        0     1                 
+    5e64     5e64        0     1                 asynchronous_interrupt
     5e64     5e64        0     1                 
+    5e64     5e64        0     1                 
+    5e66     5e66        0     1                 .Lpcrel_hi2
     5e66     5e66        0     1                 
-    5e68     5e68        0     1                 
-    5e6a     5e6a        0     1                 
-    5e6c     5e6c        0     1                 
     5e6e     5e6e        0     1                 
+    5e70     5e70        0     1                 synchronous_exception
+    5e70     5e70        0     1                 
     5e70     5e70        0     1                 
     5e72     5e72        0     1                 
+    5e74     5e74        0     1                 .Lpcrel_hi3
     5e74     5e74        0     1                 
-    5e76     5e76        0     1                 
-    5e78     5e78        0     1                 
-    5e7a     5e7a        0     1                 
     5e7c     5e7c        0     1                 
+    5e7e     5e7e        0     1                 handle_interrupt
+    5e7e     5e7e        0     1                 
+    5e7e     5e7e        0     1                 test_if_mtimer
+    5e7e     5e7e        0     1                 
     5e7e     5e7e        0     1                 
     5e80     5e80        0     1                 
     5e82     5e82        0     1                 
-    5e84     5e84        0     1                 
-    5e88     5e88        0     1                 
-    5e8c     5e8c        0     1                 other_exception
-    5e8c     5e8c        0     1                 
-    5e8c     5e8c        0     1                 
-    5e90     5e90        0     1                 .Lpcrel_hi5
-    5e90     5e90        0     1                 
-    5e98     5e98        0     1                 
+    5e86     5e86        0     1                 
+    5e8a     5e8a        0     1                 .Lpcrel_hi4
+    5e8a     5e8a        0     1                 
+    5e92     5e92        0     1                 .Lpcrel_hi5
+    5e92     5e92        0     1                 
+    5e9a     5e9a        0     1                 
     5e9c     5e9c        0     1                 
     5e9e     5e9e        0     1                 
+    5ea0     5ea0        0     1                 
     5ea2     5ea2        0     1                 
     5ea4     5ea4        0     1                 
-    5ea8     5ea8        0     1                 
-    5eaa     5eaa        0     1                 .Lpcrel_hi6
-    5eaa     5eaa        0     1                 
+    5ea6     5ea6        0     1                 .Lpcrel_hi6
+    5ea6     5ea6        0     1                 
+    5eae     5eae        0     1                 
     5eb2     5eb2        0     1                 
     5eb6     5eb6        0     1                 
-    5eb8     5eb8        0     1                 
     5eba     5eba        0     1                 
     5ebc     5ebc        0     1                 
-    5ebe     5ebe        0     1                 
     5ec0     5ec0        0     1                 
-    5ec2     5ec2        0     1                 
     5ec4     5ec4        0     1                 
     5ec6     5ec6        0     1                 
-    5ec8     5ec8        0     1                 
     5eca     5eca        0     1                 
+    5ecc     5ecc        0     1                 application_interrupt_handler
     5ecc     5ecc        0     1                 
-    5ece     5ece        0     1                 
+    5ecc     5ecc        0     1                 
     5ed0     5ed0        0     1                 
+    5ed2     5ed2        0     1                 handle_exception
     5ed2     5ed2        0     1                 
-    5ed4     5ed4        0     1                 
+    5ed2     5ed2        0     1                 
     5ed6     5ed6        0     1                 
-    5ed8     5ed8        0     1                 
     5eda     5eda        0     1                 
     5edc     5edc        0     1                 
-    5ede     5ede        0     1                 
     5ee0     5ee0        0     1                 
-    5ee2     5ee2        0     1                 
     5ee4     5ee4        0     1                 
+    5ee6     5ee6        0     1                 application_exception_handler
     5ee6     5ee6        0     1                 
-    5ee8     5ee8        0     1                 
+    5ee6     5ee6        0     1                 
     5eea     5eea        0     1                 
+    5eec     5eec        0     1                 processed_source
     5eec     5eec        0     1                 
-    5eee     5eee        0     1                 
-    5ef2     5ef2        0     1                 
-    5ef6     5ef6        0     1                 
-    5f00     5f00      14e   256         ./src/Demo/Common/vector_table_asm.o:(.text.freertos_renesas_risc_v_trap_handler)
+    5eec     5eec        0     1                 .Lpcrel_hi7
+    5eec     5eec        0     1                 
+    5ef4     5ef4        0     1                 
+    5ef8     5ef8        0     1                 
+    5efa     5efa        0     1                 
+    5efe     5efe        0     1                 
     5f00     5f00        0     1                 
-    5f00     5f00        0     1                 
-    5f00     5f00        0     1                 freertos_renesas_risc_v_trap_handler
     5f04     5f04        0     1                 
+    5f06     5f06        0     1                 .Lpcrel_hi8
     5f06     5f06        0     1                 
-    5f08     5f08        0     1                 
-    5f0a     5f0a        0     1                 
-    5f0c     5f0c        0     1                 
     5f0e     5f0e        0     1                 
-    5f10     5f10        0     1                 
     5f12     5f12        0     1                 
     5f14     5f14        0     1                 
     5f16     5f16        0     1                 
@@ -6886,429 +6849,327 @@
     5f36     5f36        0     1                 
     5f38     5f38        0     1                 
     5f3a     5f3a        0     1                 
-    5f3c     5f3c        0     1                 .Lpcrel_hi7
     5f3c     5f3c        0     1                 
+    5f3e     5f3e        0     1                 
+    5f40     5f40        0     1                 
+    5f42     5f42        0     1                 
     5f44     5f44        0     1                 
     5f46     5f46        0     1                 
+    5f48     5f48        0     1                 
     5f4a     5f4a        0     1                 
-    5f4c     5f4c        0     1                 .Lpcrel_hi8
-    5f4c     5f4c        0     1                 
-    5f54     5f54        0     1                 
-    5f58     5f58        0     1                 
-    5f5c     5f5c        0     1                 
-    5f60     5f60        0     1                 
-    5f64     5f64        0     1                 asynchronous_interrupt
-    5f64     5f64        0     1                 
-    5f64     5f64        0     1                 
-    5f66     5f66        0     1                 .Lpcrel_hi9
-    5f66     5f66        0     1                 
-    5f6e     5f6e        0     1                 
-    5f70     5f70        0     1                 synchronous_exception
-    5f70     5f70        0     1                 
-    5f70     5f70        0     1                 
-    5f72     5f72        0     1                 
-    5f74     5f74        0     1                 .Lpcrel_hi10
-    5f74     5f74        0     1                 
-    5f7c     5f7c        0     1                 
-    5f7e     5f7e        0     1                 handle_interrupt
-    5f7e     5f7e        0     1                 
-    5f7e     5f7e        0     1                 test_if_mtimer
-    5f7e     5f7e        0     1                 
-    5f7e     5f7e        0     1                 
-    5f80     5f80        0     1                 
-    5f82     5f82        0     1                 
-    5f86     5f86        0     1                 
-    5f8a     5f8a        0     1                 .Lpcrel_hi11
-    5f8a     5f8a        0     1                 
-    5f92     5f92        0     1                 .Lpcrel_hi12
-    5f92     5f92        0     1                 
-    5f9a     5f9a        0     1                 
-    5f9c     5f9c        0     1                 
-    5f9e     5f9e        0     1                 
-    5fa0     5fa0        0     1                 
-    5fa2     5fa2        0     1                 
-    5fa4     5fa4        0     1                 
-    5fa6     5fa6        0     1                 .Lpcrel_hi13
-    5fa6     5fa6        0     1                 
-    5fae     5fae        0     1                 
-    5fb2     5fb2        0     1                 
-    5fb6     5fb6        0     1                 
-    5fba     5fba        0     1                 
-    5fbc     5fbc        0     1                 
-    5fc0     5fc0        0     1                 
-    5fc4     5fc4        0     1                 
-    5fc6     5fc6        0     1                 
-    5fca     5fca        0     1                 
-    5fcc     5fcc        0     1                 application_interrupt_handler
-    5fcc     5fcc        0     1                 
-    5fcc     5fcc        0     1                 
-    5fd0     5fd0        0     1                 
-    5fd2     5fd2        0     1                 handle_exception
-    5fd2     5fd2        0     1                 
-    5fd2     5fd2        0     1                 
-    5fd6     5fd6        0     1                 
-    5fd8     5fd8        0     1                 
-    5fdc     5fdc        0     1                 
-    5fe0     5fe0        0     1                 
-    5fe2     5fe2        0     1                 application_exception_handler
-    5fe2     5fe2        0     1                 
-    5fe2     5fe2        0     1                 
-    5fe6     5fe6        0     1                 
-    5fe8     5fe8        0     1                 processed_source
-    5fe8     5fe8        0     1                 
-    5fe8     5fe8        0     1                 .Lpcrel_hi14
-    5fe8     5fe8        0     1                 
-    5ff0     5ff0        0     1                 
-    5ff4     5ff4        0     1                 
-    5ff6     5ff6        0     1                 
-    5ffa     5ffa        0     1                 
-    5ffc     5ffc        0     1                 
-    6000     6000        0     1                 
-    6002     6002        0     1                 .Lpcrel_hi15
-    6002     6002        0     1                 
-    600a     600a        0     1                 
-    600e     600e        0     1                 
-    6010     6010        0     1                 
-    6012     6012        0     1                 
-    6014     6014        0     1                 
-    6016     6016        0     1                 
-    6018     6018        0     1                 
-    601a     601a        0     1                 
-    601c     601c        0     1                 
-    601e     601e        0     1                 
-    6020     6020        0     1                 
-    6022     6022        0     1                 
-    6024     6024        0     1                 
-    6026     6026        0     1                 
-    6028     6028        0     1                 
-    602a     602a        0     1                 
-    602c     602c        0     1                 
-    602e     602e        0     1                 
-    6030     6030        0     1                 
-    6032     6032        0     1                 
-    6034     6034        0     1                 
-    6036     6036        0     1                 
-    6038     6038        0     1                 
-    603a     603a        0     1                 
-    603c     603c        0     1                 
-    603e     603e        0     1                 
-    6040     6040        0     1                 
-    6042     6042        0     1                 
-    6044     6044        0     1                 
-    6046     6046        0     1                 
-    604a     604a        0     1                 
-    604e     604e        0     1                 
-    604e     604e       ee     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-memcpy.o):(.text.memcpy)
-    604e     604e       ee     1                 memcpy
-    6070     6070        0     1                 .LBB0_3
-    6084     6084        0     1                 .LBB0_5
-    6088     6088        0     1                 .LBB0_6
-    609a     609a        0     1                 .LBB0_7
-    609c     609c        0     1                 .LBB0_8
-    60a0     60a0        0     1                 .LBB0_9
-    60a6     60a6        0     1                 .LBB0_10
-    60aa     60aa        0     1                 .LBB0_11
-    60b0     60b0        0     1                 .LBB0_12
-    60ca     60ca        0     1                 .LBB0_13
-    60ce     60ce        0     1                 .LBB0_14
-    6120     6120        0     1                 .LBB0_15
-    6122     6122        0     1                 .LBB0_16
-    612a     612a        0     1                 .LBB0_18
-    613c     613c       74     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-strlen.o):(.text.strlen)
-    613c     613c       74     1                 strlen
-    6144     6144        0     1                 .LBB0_1
-    6154     6154        0     1                 .LBB0_2
-    617e     617e        0     1                 .LBB0_7
-    6182     6182        0     1                 .LBB0_8
-    6188     6188        0     1                 .LBB0_9
-    618e     618e        0     1                 .LBB0_10
-    6194     6194        0     1                 .LBB0_11
-    619c     619c        0     1                 .LBB0_12
-    61b0     61b0       5e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-init.o):(.text.__libc_init_array)
-    61b0     61b0       5e     1                 __libc_init_array
-    61d4     61d4        0     1                 .LBB0_2
-    61de     61de        0     1                 .LBB0_3
-    61fa     61fa        0     1                 .LBB0_5
-    6204     6204        0     1                 .LBB0_6
-    620e     620e       1e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-exit.o):(.text.exit)
-    620e     620e       1e     1                 exit
-    6226     6226        0     1                 .LBB0_2
-    622c     622c       c4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-__call_atexit.o):(.text.__call_exitprocs)
-    622c     622c       c4     1                 __call_exitprocs
-    6252     6252        0     1                 .LBB0_2
-    6266     6266        0     1                 .LBB0_4
-    6268     6268        0     1                 .LBB0_5
-    627e     627e        0     1                 .LBB0_6
-    6288     6288        0     1                 .LBB0_7
-    6298     6298        0     1                 .LBB0_9
-    62aa     62aa        0     1                 .LBB0_11
-    62b0     62b0        0     1                 .LBB0_12
-    62cc     62cc        0     1                 .LBB0_15
-    62d2     62d2        0     1                 .LBB0_16
-    62da     62da        0     1                 .LBB0_17
-    62f0     62f0       c6     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sfp)
-    62f0     62f0       c6     1                 __sfp
-    630e     630e        0     1                 .LBB0_1
-    631c     631c        0     1                 .LBB0_3
-    632c     632c        0     1                 .LBB0_5
-    635a     635a        0     1                 .LBB0_8
-    6396     6396        0     1                 .LBB0_9
-    63a8     63a8        0     1                 .LBB0_10
-    63b6     63b6        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sfp_lock_acquire)
-    63b6     63b6        2     1                 __sfp_lock_acquire
-    63b8     63b8      12e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.global_stdio_init)
-    63b8     63b8      12e     1                 global_stdio_init
-    63c4     63c4        0     1                 .LBB2_2
-    64e6     64e6        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sfp_lock_release)
-    64e6     64e6        2     1                 __sfp_lock_release
-    64e8     64e8       12     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sinit)
-    64e8     64e8       12     1                 __sinit
-    64ee     64ee        0     1                 .LBB4_2
-    64fa     64fa       54     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.cleanup_stdio)
-    64fa     64fa       54     1                 cleanup_stdio
-    6518     6518        0     1                 .LBB5_2
-    6528     6528        0     1                 .LBB5_4
-    6544     6544        0     1                 .LBB5_6
-    654e     654e       16     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_lock_all)
-    654e     654e       16     1                 __fp_lock_all
-    6564     6564        4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_lock)
-    6564     6564        4     1                 __fp_lock
-    6568     6568       16     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_unlock_all)
-    6568     6568       16     1                 __fp_unlock_all
-    657e     657e        4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_unlock)
-    657e     657e        4     1                 __fp_unlock
-    6582     6582       1c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.stdio_exit_handler)
-    6582     6582       1c     1                 stdio_exit_handler
-    659e     659e      572     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-mallocr.o):(.text._malloc_r)
-    659e     659e      572     1                 _malloc_r
-    65ca     65ca        0     1                 .LBB0_2
-    65cc     65cc        0     1                 .LBB0_3
-    65e2     65e2        0     1                 .LBB0_5
-    6602     6602        0     1                 .LBB0_8
-    661e     661e        0     1                 .LBB0_9
-    6634     6634        0     1                 .LBB0_12
-    663c     663c        0     1                 .LBB0_13
-    6644     6644        0     1                 .LBB0_14
-    664a     664a        0     1                 .LBB0_15
-    6656     6656        0     1                 .LBB0_17
-    6668     6668        0     1                 .LBB0_19
-    667a     667a        0     1                 .LBB0_21
-    6688     6688        0     1                 .LBB0_23
-    6690     6690        0     1                 .LBB0_24
-    66a4     66a4        0     1                 .LBB0_26
-    66be     66be        0     1                 .LBB0_29
-    66c0     66c0        0     1                 .LBB0_30
-    66c2     66c2        0     1                 .LBB0_31
-    670e     670e        0     1                 .LBB0_34
-    672c     672c        0     1                 .LBB0_36
-    6736     6736        0     1                 .LBB0_37
-    674c     674c        0     1                 .LBB0_38
-    677c     677c        0     1                 .LBB0_40
-    6790     6790        0     1                 .LBB0_42
-    679c     679c        0     1                 .LBB0_44
-    67ae     67ae        0     1                 .LBB0_46
-    67c0     67c0        0     1                 .LBB0_48
-    67ce     67ce        0     1                 .LBB0_50
-    67d6     67d6        0     1                 .LBB0_51
-    67e8     67e8        0     1                 .LBB0_52
-    67fa     67fa        0     1                 .LBB0_55
-    680a     680a        0     1                 .LBB0_56
-    680c     680c        0     1                 .LBB0_57
-    680e     680e        0     1                 .LBB0_58
-    6814     6814        0     1                 .LBB0_59
-    6818     6818        0     1                 .LBB0_60
-    682c     682c        0     1                 .LBB0_61
-    6878     6878        0     1                 .LBB0_64
-    6886     6886        0     1                 .LBB0_66
-    6892     6892        0     1                 .LBB0_67
-    689c     689c        0     1                 .LBB0_68
-    68a4     68a4        0     1                 .LBB0_69
-    68a6     68a6        0     1                 .LBB0_70
-    68be     68be        0     1                 .LBB0_73
-    68c8     68c8        0     1                 .LBB0_74
-    68e0     68e0        0     1                 .LBB0_76
-    68e8     68e8        0     1                 .LBB0_77
-    68fa     68fa        0     1                 .LBB0_79
-    6908     6908        0     1                 .LBB0_81
-    693c     693c        0     1                 .LBB0_82
-    6952     6952        0     1                 .LBB0_83
-    6956     6956        0     1                 .LBB0_84
-    6976     6976        0     1                 .LBB0_85
-    6978     6978        0     1                 .LBB0_86
-    69cc     69cc        0     1                 .LBB0_90
-    69ea     69ea        0     1                 .LBB0_92
-    69ee     69ee        0     1                 .LBB0_93
-    6a3c     6a3c        0     1                 .LBB0_95
-    6a78     6a78        0     1                 .LBB0_98
-    6aaa     6aaa        0     1                 .LBB0_100
-    6aba     6aba        0     1                 .LBB0_102
-    6aca     6aca        0     1                 .LBB0_104
-    6af2     6af2        0     1                 .LBB0_106
-    6b10     6b10        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-mlock.o):(.text.__malloc_lock)
-    6b10     6b10        2     1                 __malloc_lock
-    6b12     6b12        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-mlock.o):(.text.__malloc_unlock)
-    6b12     6b12        2     1                 __malloc_unlock
-    6b14     6b14       36     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-sbrkr.o):(.text._sbrk_r)
-    6b14     6b14       36     1                 _sbrk_r
-    6b40     6b40        0     1                 .LBB0_2
-    6b4a     6b4a       1c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(sbrk.o):(.text._sbrk)
-    6b4a     6b4a       1c     1                 _sbrk
-    6b5c     6b5c        0     1                 .LBB0_2
-    6b66     6b66      1bc     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-freer.o):(.text._free_r)
-    6b66     6b66      1bc     1                 _free_r
-    6bb4     6bb4        0     1                 .LBB0_5
-    6be0     6be0        0     1                 .LBB0_8
-    6be2     6be2        0     1                 .LBB0_9
-    6bf4     6bf4        0     1                 .LBB0_11
-    6c1c     6c1c        0     1                 .LBB0_13
-    6c2a     6c2a        0     1                 .LBB0_14
-    6c3c     6c3c        0     1                 .LBB0_16
-    6c50     6c50        0     1                 .LBB0_17
-    6c66     6c66        0     1                 .LBB0_20
-    6c72     6c72        0     1                 .LBB0_21
-    6c96     6c96        0     1                 .LBB0_22
-    6ca2     6ca2        0     1                 .LBB0_24
-    6cb4     6cb4        0     1                 .LBB0_26
-    6cc6     6cc6        0     1                 .LBB0_28
-    6cd4     6cd4        0     1                 .LBB0_30
-    6cdc     6cdc        0     1                 .LBB0_31
-    6cee     6cee        0     1                 .LBB0_32
-    6cfe     6cfe        0     1                 .LBB0_35
-    6d02     6d02        0     1                 .LBB0_36
-    6d0e     6d0e        0     1                 .LBB0_37
-    6d16     6d16        0     1                 .LBB0_38
-    6d22     6d22       d4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-freer.o):(.text._malloc_trim_r)
-    6d22     6d22       d4     1                 _malloc_trim_r
-    6d64     6d64        0     1                 .LBB1_2
-    6daa     6daa        0     1                 .LBB1_5
-    6dde     6dde        0     1                 .LBB1_7
-    6df6     6df6       30     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__sread)
-    6df6     6df6       30     1                 __sread
-    6e10     6e10        0     1                 .LBB0_2
-    6e1e     6e1e        0     1                 .LBB0_3
-    6e26     6e26        4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__seofread)
-    6e26     6e26        4     1                 __seofread
-    6e2a     6e2a       50     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__swrite)
-    6e2a     6e2a       50     1                 __swrite
-    6e58     6e58        0     1                 .LBB2_2
-    6e7a     6e7a       36     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__sseek)
-    6e7a     6e7a       36     1                 __sseek
-    6e9e     6e9e        0     1                 .LBB3_2
-    6ea8     6ea8        0     1                 .LBB3_3
-    6eb0     6eb0        6     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__sclose)
-    6eb0     6eb0        6     1                 __sclose
-    6eb6     6eb6       3a     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-readr.o):(.text._read_r)
-    6eb6     6eb6       3a     1                 _read_r
-    6ee6     6ee6        0     1                 .LBB0_2
-    6ef0     6ef0       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(read.o):(.text._read)
-    6ef0     6ef0       10     1                 _read
-    6f00     6f00       3a     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-writer.o):(.text._write_r)
-    6f00     6f00       3a     1                 _write_r
-    6f30     6f30        0     1                 .LBB0_2
-    6f3a     6f3a       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(write.o):(.text._write)
-    6f3a     6f3a       10     1                 _write
-    6f4a     6f4a       36     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-closer.o):(.text._close_r)
-    6f4a     6f4a       36     1                 _close_r
-    6f76     6f76        0     1                 .LBB0_2
-    6f80     6f80       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(close.o):(.text._close)
-    6f80     6f80       10     1                 _close
-    6f90     6f90       8e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fclose.o):(.text._fclose_r)
-    6f90     6f90       8e     1                 _fclose_r
-    6fa6     6fa6        0     1                 .LBB0_3
-    6fac     6fac        0     1                 .LBB0_4
-    6fc4     6fc4        0     1                 .LBB0_6
-    6fd4     6fd4        0     1                 .LBB0_8
-    6fe4     6fe4        0     1                 .LBB0_11
-    6fe8     6fe8        0     1                 .LBB0_12
-    6ff4     6ff4        0     1                 .LBB0_14
-    7002     7002        0     1                 .LBB0_15
-    700e     700e        0     1                 .LBB0_16
-    7010     7010        0     1                 .LBB0_17
-    701e     701e       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fclose.o):(.text.fclose)
-    701e     701e       10     1                 fclose
-    702e     702e      17c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fflush.o):(.text.__sflush_r)
-    702e     702e      17c     1                 __sflush_r
-    7060     7060        0     1                 .LBB0_3
-    709e     709e        0     1                 .LBB0_9
-    70a6     70a6        0     1                 .LBB0_10
-    70c6     70c6        0     1                 .LBB0_13
-    70ca     70ca        0     1                 .LBB0_14
-    70e4     70e4        0     1                 .LBB0_17
-    710e     710e        0     1                 .LBB0_20
-    7136     7136        0     1                 .LBB0_22
-    713c     713c        0     1                 .LBB0_23
-    7148     7148        0     1                 .LBB0_24
-    7166     7166        0     1                 .LBB0_26
-    7176     7176        0     1                 .LBB0_27
-    717c     717c        0     1                 .LBB0_28
-    7192     7192        0     1                 .LBB0_31
-    719a     719a        0     1                 .LBB0_32
-    719c     719c        0     1                 .LBB0_33
-    71aa     71aa       3c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fflush.o):(.text._fflush_r)
-    71aa     71aa       3c     1                 _fflush_r
-    71bc     71bc        0     1                 .LBB1_2
-    71c2     71c2        0     1                 .LBB1_3
-    71d0     71d0        0     1                 .LBB1_4
-    71dc     71dc        0     1                 .LBB1_5
-    71e6     71e6       66     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fflush.o):(.text.fflush)
-    71e6     71e6       66     1                 fflush
-    7200     7200        0     1                 .LBB2_3
-    7206     7206        0     1                 .LBB2_4
-    7214     7214        0     1                 .LBB2_5
-    7236     7236        0     1                 .LBB2_6
-    7242     7242        0     1                 .LBB2_7
-    724c     724c       80     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fwalk.o):(.text._fwalk_sglue)
-    724c     724c       80     1                 _fwalk_sglue
-    7274     7274        0     1                 .LBB0_1
-    727c     727c        0     1                 .LBB0_2
-    728c     728c        0     1                 .LBB0_4
-    7296     7296        0     1                 .LBB0_5
-    72b2     72b2        0     1                 .LBB0_8
-    72cc     72cc       3a     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-lseekr.o):(.text._lseek_r)
-    72cc     72cc       3a     1                 _lseek_r
-    72fc     72fc        0     1                 .LBB0_2
-    7306     7306       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(lseek.o):(.text._lseek)
-    7306     7306       10     1                 _lseek
-    7316     7316      122     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libclang_rt.builtins-riscv32.a(udivdi3.c.o):(.text.__udivdi3)
-    7316     7316      122     1                 __udivdi3
-    7322     7322        0     1                 .LBB0_2
-    7328     7328        0     1                 .LBB0_3
-    732e     732e        0     1                 .LBB0_4
-    7336     7336        0     1                 .LBB0_5
-    7348     7348        0     1                 .LBB0_7
-    7364     7364        0     1                 .LBB0_10
-    737a     737a        0     1                 .LBB0_11
-    7398     7398        0     1                 .LBB0_13
-    73b2     73b2        0     1                 .LBB0_14
-    73c8     73c8        0     1                 .LBB0_15
-    7436     7436        0     1                 .LBB0_17
-    7438     7438       b8     4 .rodata
-    7438     7438        0     1         . = ALIGN ( 4 )
-    7438     7438        0     1         __rodata = .
-    7438     7438       14     4         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.rodata..Lswitch.table.get_iclk_freq_hz)
-    7438     7438       14     1                 .Lswitch.table.get_iclk_freq_hz
-    744c     744c        6     2         ./src/smc_gen/r_bsp/mcu/all/r_bsp_common.o:(.rodata.s_prcr_masks)
-    744c     744c        6     1                 s_prcr_masks
-    7452     7452       66     1         <internal>:(.rodata.str1.1)
-    74b8     74b8        4     4         ./src/Source/Portable/LLVM/port.o:(.rodata.xISRStackTop)
-    74b8     74b8        4     1                 xISRStackTop
-    74bc     74bc        4     4         ./src/Source/Portable/LLVM/port.o:(.rodata.uxTimerIncrementsForOneTick)
-    74bc     74bc        4     1                 uxTimerIncrementsForOneTick
-    74c0     74c0        4     4         ./src/Source/Portable/LLVM/port.o:(.rodata.ullMachineTimerCompareRegisterBase)
-    74c0     74c0        4     1                 ullMachineTimerCompareRegisterBase
-    74c4     74c4       14     4         ./src/Source/tasks.o:(.rodata.xTaskGenericNotify)
-    74c4     74c4        0     1                 .LJTI44_0
-    74d8     74d8       14     4         ./src/Source/tasks.o:(.rodata.xTaskGenericNotifyFromISR)
-    74d8     74d8        0     1                 .LJTI45_0
-    74ec     74ec        4     4         ./src/Source/tasks.o:(.rodata.uxTopUsedPriority)
-    74ec     74ec        4     1                 uxTopUsedPriority
-    74f0     74f0        0     1         . = ALIGN ( 4 )
-    74f0     74f0        0     1         . = ALIGN ( 4 )
-    74f0     74f0        0     1         PROVIDE ( __preinit_array_start = . )
-    74f0     74f0        0     1         PROVIDE ( __preinit_array_end = . )
-    74f0     74f0        0     1         PROVIDE ( __init_array_start = . )
-    74f0     74f0        0     1         PROVIDE ( __init_array_end = . )
-    74f0     74f0        0     1         __erodata = .
+    5f4e     5f4e        0     1                 
+    5f52     5f52        0     1                 
+    5f52     5f52       ee     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-memcpy.o):(.text.memcpy)
+    5f52     5f52       ee     1                 memcpy
+    5f74     5f74        0     1                 .LBB0_3
+    5f88     5f88        0     1                 .LBB0_5
+    5f8c     5f8c        0     1                 .LBB0_6
+    5f9e     5f9e        0     1                 .LBB0_7
+    5fa0     5fa0        0     1                 .LBB0_8
+    5fa4     5fa4        0     1                 .LBB0_9
+    5faa     5faa        0     1                 .LBB0_10
+    5fae     5fae        0     1                 .LBB0_11
+    5fb4     5fb4        0     1                 .LBB0_12
+    5fce     5fce        0     1                 .LBB0_13
+    5fd2     5fd2        0     1                 .LBB0_14
+    6024     6024        0     1                 .LBB0_15
+    6026     6026        0     1                 .LBB0_16
+    602e     602e        0     1                 .LBB0_18
+    6040     6040       74     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-strlen.o):(.text.strlen)
+    6040     6040       74     1                 strlen
+    6048     6048        0     1                 .LBB0_1
+    6058     6058        0     1                 .LBB0_2
+    6082     6082        0     1                 .LBB0_7
+    6086     6086        0     1                 .LBB0_8
+    608c     608c        0     1                 .LBB0_9
+    6092     6092        0     1                 .LBB0_10
+    6098     6098        0     1                 .LBB0_11
+    60a0     60a0        0     1                 .LBB0_12
+    60b4     60b4       5e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-init.o):(.text.__libc_init_array)
+    60b4     60b4       5e     1                 __libc_init_array
+    60d8     60d8        0     1                 .LBB0_2
+    60e2     60e2        0     1                 .LBB0_3
+    60fe     60fe        0     1                 .LBB0_5
+    6108     6108        0     1                 .LBB0_6
+    6112     6112       1e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-exit.o):(.text.exit)
+    6112     6112       1e     1                 exit
+    612a     612a        0     1                 .LBB0_2
+    6130     6130       c4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-__call_atexit.o):(.text.__call_exitprocs)
+    6130     6130       c4     1                 __call_exitprocs
+    6156     6156        0     1                 .LBB0_2
+    616a     616a        0     1                 .LBB0_4
+    616c     616c        0     1                 .LBB0_5
+    6182     6182        0     1                 .LBB0_6
+    618c     618c        0     1                 .LBB0_7
+    619c     619c        0     1                 .LBB0_9
+    61ae     61ae        0     1                 .LBB0_11
+    61b4     61b4        0     1                 .LBB0_12
+    61d0     61d0        0     1                 .LBB0_15
+    61d6     61d6        0     1                 .LBB0_16
+    61de     61de        0     1                 .LBB0_17
+    61f4     61f4       c6     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sfp)
+    61f4     61f4       c6     1                 __sfp
+    6212     6212        0     1                 .LBB0_1
+    6220     6220        0     1                 .LBB0_3
+    6230     6230        0     1                 .LBB0_5
+    625e     625e        0     1                 .LBB0_8
+    629a     629a        0     1                 .LBB0_9
+    62ac     62ac        0     1                 .LBB0_10
+    62ba     62ba        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sfp_lock_acquire)
+    62ba     62ba        2     1                 __sfp_lock_acquire
+    62bc     62bc      12e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.global_stdio_init)
+    62bc     62bc      12e     1                 global_stdio_init
+    62c8     62c8        0     1                 .LBB2_2
+    63ea     63ea        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sfp_lock_release)
+    63ea     63ea        2     1                 __sfp_lock_release
+    63ec     63ec       12     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__sinit)
+    63ec     63ec       12     1                 __sinit
+    63f2     63f2        0     1                 .LBB4_2
+    63fe     63fe       54     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.cleanup_stdio)
+    63fe     63fe       54     1                 cleanup_stdio
+    641c     641c        0     1                 .LBB5_2
+    642c     642c        0     1                 .LBB5_4
+    6448     6448        0     1                 .LBB5_6
+    6452     6452       16     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_lock_all)
+    6452     6452       16     1                 __fp_lock_all
+    6468     6468        4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_lock)
+    6468     6468        4     1                 __fp_lock
+    646c     646c       16     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_unlock_all)
+    646c     646c       16     1                 __fp_unlock_all
+    6482     6482        4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.__fp_unlock)
+    6482     6482        4     1                 __fp_unlock
+    6486     6486       1c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-findfp.o):(.text.stdio_exit_handler)
+    6486     6486       1c     1                 stdio_exit_handler
+    64a2     64a2      572     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-mallocr.o):(.text._malloc_r)
+    64a2     64a2      572     1                 _malloc_r
+    64ce     64ce        0     1                 .LBB0_2
+    64d0     64d0        0     1                 .LBB0_3
+    64e6     64e6        0     1                 .LBB0_5
+    6506     6506        0     1                 .LBB0_8
+    6522     6522        0     1                 .LBB0_9
+    6538     6538        0     1                 .LBB0_12
+    6540     6540        0     1                 .LBB0_13
+    6548     6548        0     1                 .LBB0_14
+    654e     654e        0     1                 .LBB0_15
+    655a     655a        0     1                 .LBB0_17
+    656c     656c        0     1                 .LBB0_19
+    657e     657e        0     1                 .LBB0_21
+    658c     658c        0     1                 .LBB0_23
+    6594     6594        0     1                 .LBB0_24
+    65a8     65a8        0     1                 .LBB0_26
+    65c2     65c2        0     1                 .LBB0_29
+    65c4     65c4        0     1                 .LBB0_30
+    65c6     65c6        0     1                 .LBB0_31
+    6612     6612        0     1                 .LBB0_34
+    6630     6630        0     1                 .LBB0_36
+    663a     663a        0     1                 .LBB0_37
+    6650     6650        0     1                 .LBB0_38
+    6680     6680        0     1                 .LBB0_40
+    6694     6694        0     1                 .LBB0_42
+    66a0     66a0        0     1                 .LBB0_44
+    66b2     66b2        0     1                 .LBB0_46
+    66c4     66c4        0     1                 .LBB0_48
+    66d2     66d2        0     1                 .LBB0_50
+    66da     66da        0     1                 .LBB0_51
+    66ec     66ec        0     1                 .LBB0_52
+    66fe     66fe        0     1                 .LBB0_55
+    670e     670e        0     1                 .LBB0_56
+    6710     6710        0     1                 .LBB0_57
+    6712     6712        0     1                 .LBB0_58
+    6718     6718        0     1                 .LBB0_59
+    671c     671c        0     1                 .LBB0_60
+    6730     6730        0     1                 .LBB0_61
+    677c     677c        0     1                 .LBB0_64
+    678a     678a        0     1                 .LBB0_66
+    6796     6796        0     1                 .LBB0_67
+    67a0     67a0        0     1                 .LBB0_68
+    67a8     67a8        0     1                 .LBB0_69
+    67aa     67aa        0     1                 .LBB0_70
+    67c2     67c2        0     1                 .LBB0_73
+    67cc     67cc        0     1                 .LBB0_74
+    67e4     67e4        0     1                 .LBB0_76
+    67ec     67ec        0     1                 .LBB0_77
+    67fe     67fe        0     1                 .LBB0_79
+    680c     680c        0     1                 .LBB0_81
+    6840     6840        0     1                 .LBB0_82
+    6856     6856        0     1                 .LBB0_83
+    685a     685a        0     1                 .LBB0_84
+    687a     687a        0     1                 .LBB0_85
+    687c     687c        0     1                 .LBB0_86
+    68d0     68d0        0     1                 .LBB0_90
+    68ee     68ee        0     1                 .LBB0_92
+    68f2     68f2        0     1                 .LBB0_93
+    6940     6940        0     1                 .LBB0_95
+    697c     697c        0     1                 .LBB0_98
+    69ae     69ae        0     1                 .LBB0_100
+    69be     69be        0     1                 .LBB0_102
+    69ce     69ce        0     1                 .LBB0_104
+    69f6     69f6        0     1                 .LBB0_106
+    6a14     6a14        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-mlock.o):(.text.__malloc_lock)
+    6a14     6a14        2     1                 __malloc_lock
+    6a16     6a16        2     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-mlock.o):(.text.__malloc_unlock)
+    6a16     6a16        2     1                 __malloc_unlock
+    6a18     6a18       36     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-sbrkr.o):(.text._sbrk_r)
+    6a18     6a18       36     1                 _sbrk_r
+    6a44     6a44        0     1                 .LBB0_2
+    6a4e     6a4e       1c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(sbrk.o):(.text._sbrk)
+    6a4e     6a4e       1c     1                 _sbrk
+    6a60     6a60        0     1                 .LBB0_2
+    6a6a     6a6a      1bc     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-freer.o):(.text._free_r)
+    6a6a     6a6a      1bc     1                 _free_r
+    6ab8     6ab8        0     1                 .LBB0_5
+    6ae4     6ae4        0     1                 .LBB0_8
+    6ae6     6ae6        0     1                 .LBB0_9
+    6af8     6af8        0     1                 .LBB0_11
+    6b20     6b20        0     1                 .LBB0_13
+    6b2e     6b2e        0     1                 .LBB0_14
+    6b40     6b40        0     1                 .LBB0_16
+    6b54     6b54        0     1                 .LBB0_17
+    6b6a     6b6a        0     1                 .LBB0_20
+    6b76     6b76        0     1                 .LBB0_21
+    6b9a     6b9a        0     1                 .LBB0_22
+    6ba6     6ba6        0     1                 .LBB0_24
+    6bb8     6bb8        0     1                 .LBB0_26
+    6bca     6bca        0     1                 .LBB0_28
+    6bd8     6bd8        0     1                 .LBB0_30
+    6be0     6be0        0     1                 .LBB0_31
+    6bf2     6bf2        0     1                 .LBB0_32
+    6c02     6c02        0     1                 .LBB0_35
+    6c06     6c06        0     1                 .LBB0_36
+    6c12     6c12        0     1                 .LBB0_37
+    6c1a     6c1a        0     1                 .LBB0_38
+    6c26     6c26       d4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-freer.o):(.text._malloc_trim_r)
+    6c26     6c26       d4     1                 _malloc_trim_r
+    6c68     6c68        0     1                 .LBB1_2
+    6cae     6cae        0     1                 .LBB1_5
+    6ce2     6ce2        0     1                 .LBB1_7
+    6cfa     6cfa       30     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__sread)
+    6cfa     6cfa       30     1                 __sread
+    6d14     6d14        0     1                 .LBB0_2
+    6d22     6d22        0     1                 .LBB0_3
+    6d2a     6d2a        4     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__seofread)
+    6d2a     6d2a        4     1                 __seofread
+    6d2e     6d2e       50     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__swrite)
+    6d2e     6d2e       50     1                 __swrite
+    6d5c     6d5c        0     1                 .LBB2_2
+    6d7e     6d7e       36     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__sseek)
+    6d7e     6d7e       36     1                 __sseek
+    6da2     6da2        0     1                 .LBB3_2
+    6dac     6dac        0     1                 .LBB3_3
+    6db4     6db4        6     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-stdio.o):(.text.__sclose)
+    6db4     6db4        6     1                 __sclose
+    6dba     6dba       3a     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-readr.o):(.text._read_r)
+    6dba     6dba       3a     1                 _read_r
+    6dea     6dea        0     1                 .LBB0_2
+    6df4     6df4       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(read.o):(.text._read)
+    6df4     6df4       10     1                 _read
+    6e04     6e04       3a     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-writer.o):(.text._write_r)
+    6e04     6e04       3a     1                 _write_r
+    6e34     6e34        0     1                 .LBB0_2
+    6e3e     6e3e       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(write.o):(.text._write)
+    6e3e     6e3e       10     1                 _write
+    6e4e     6e4e       36     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-closer.o):(.text._close_r)
+    6e4e     6e4e       36     1                 _close_r
+    6e7a     6e7a        0     1                 .LBB0_2
+    6e84     6e84       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(close.o):(.text._close)
+    6e84     6e84       10     1                 _close
+    6e94     6e94       8e     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fclose.o):(.text._fclose_r)
+    6e94     6e94       8e     1                 _fclose_r
+    6eaa     6eaa        0     1                 .LBB0_3
+    6eb0     6eb0        0     1                 .LBB0_4
+    6ec8     6ec8        0     1                 .LBB0_6
+    6ed8     6ed8        0     1                 .LBB0_8
+    6ee8     6ee8        0     1                 .LBB0_11
+    6eec     6eec        0     1                 .LBB0_12
+    6ef8     6ef8        0     1                 .LBB0_14
+    6f06     6f06        0     1                 .LBB0_15
+    6f12     6f12        0     1                 .LBB0_16
+    6f14     6f14        0     1                 .LBB0_17
+    6f22     6f22       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fclose.o):(.text.fclose)
+    6f22     6f22       10     1                 fclose
+    6f32     6f32      17c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fflush.o):(.text.__sflush_r)
+    6f32     6f32      17c     1                 __sflush_r
+    6f64     6f64        0     1                 .LBB0_3
+    6fa2     6fa2        0     1                 .LBB0_9
+    6faa     6faa        0     1                 .LBB0_10
+    6fca     6fca        0     1                 .LBB0_13
+    6fce     6fce        0     1                 .LBB0_14
+    6fe8     6fe8        0     1                 .LBB0_17
+    7012     7012        0     1                 .LBB0_20
+    703a     703a        0     1                 .LBB0_22
+    7040     7040        0     1                 .LBB0_23
+    704c     704c        0     1                 .LBB0_24
+    706a     706a        0     1                 .LBB0_26
+    707a     707a        0     1                 .LBB0_27
+    7080     7080        0     1                 .LBB0_28
+    7096     7096        0     1                 .LBB0_31
+    709e     709e        0     1                 .LBB0_32
+    70a0     70a0        0     1                 .LBB0_33
+    70ae     70ae       3c     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fflush.o):(.text._fflush_r)
+    70ae     70ae       3c     1                 _fflush_r
+    70c0     70c0        0     1                 .LBB1_2
+    70c6     70c6        0     1                 .LBB1_3
+    70d4     70d4        0     1                 .LBB1_4
+    70e0     70e0        0     1                 .LBB1_5
+    70ea     70ea       66     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fflush.o):(.text.fflush)
+    70ea     70ea       66     1                 fflush
+    7104     7104        0     1                 .LBB2_3
+    710a     710a        0     1                 .LBB2_4
+    7118     7118        0     1                 .LBB2_5
+    713a     713a        0     1                 .LBB2_6
+    7146     7146        0     1                 .LBB2_7
+    7150     7150       80     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-fwalk.o):(.text._fwalk_sglue)
+    7150     7150       80     1                 _fwalk_sglue
+    7178     7178        0     1                 .LBB0_1
+    7180     7180        0     1                 .LBB0_2
+    7190     7190        0     1                 .LBB0_4
+    719a     719a        0     1                 .LBB0_5
+    71b6     71b6        0     1                 .LBB0_8
+    71d0     71d0       3a     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libc.a(libc_a-lseekr.o):(.text._lseek_r)
+    71d0     71d0       3a     1                 _lseek_r
+    7200     7200        0     1                 .LBB0_2
+    720a     720a       10     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libnosys.a(lseek.o):(.text._lseek)
+    720a     720a       10     1                 _lseek
+    721a     721a      122     2         C:\ProgramData\LLVM for Renesas RISC-V 17.0.2.202407\bin\..\lib\clang-runtimes\riscv32-unknown-elf/rv32imaczba_zbb_zbs/ilp32\lib\libclang_rt.builtins-riscv32.a(udivdi3.c.o):(.text.__udivdi3)
+    721a     721a      122     1                 __udivdi3
+    7226     7226        0     1                 .LBB0_2
+    722c     722c        0     1                 .LBB0_3
+    7232     7232        0     1                 .LBB0_4
+    723a     723a        0     1                 .LBB0_5
+    724c     724c        0     1                 .LBB0_7
+    7268     7268        0     1                 .LBB0_10
+    727e     727e        0     1                 .LBB0_11
+    729c     729c        0     1                 .LBB0_13
+    72b6     72b6        0     1                 .LBB0_14
+    72cc     72cc        0     1                 .LBB0_15
+    733a     733a        0     1                 .LBB0_17
+    733c     733c       b8     4 .rodata
+    733c     733c        0     1         . = ALIGN ( 4 )
+    733c     733c        0     1         __rodata = .
+    733c     733c       14     4         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.rodata..Lswitch.table.get_iclk_freq_hz)
+    733c     733c       14     1                 .Lswitch.table.get_iclk_freq_hz
+    7350     7350        6     2         ./src/smc_gen/r_bsp/mcu/all/r_bsp_common.o:(.rodata.s_prcr_masks)
+    7350     7350        6     1                 s_prcr_masks
+    7356     7356       66     1         <internal>:(.rodata.str1.1)
+    73bc     73bc        4     4         ./src/Source/Portable/LLVM/port.o:(.rodata.xISRStackTop)
+    73bc     73bc        4     1                 xISRStackTop
+    73c0     73c0        4     4         ./src/Source/Portable/LLVM/port.o:(.rodata.uxTimerIncrementsForOneTick)
+    73c0     73c0        4     1                 uxTimerIncrementsForOneTick
+    73c4     73c4        4     4         ./src/Source/Portable/LLVM/port.o:(.rodata.ullMachineTimerCompareRegisterBase)
+    73c4     73c4        4     1                 ullMachineTimerCompareRegisterBase
+    73c8     73c8       14     4         ./src/Source/tasks.o:(.rodata.xTaskGenericNotify)
+    73c8     73c8        0     1                 .LJTI44_0
+    73dc     73dc       14     4         ./src/Source/tasks.o:(.rodata.xTaskGenericNotifyFromISR)
+    73dc     73dc        0     1                 .LJTI45_0
+    73f0     73f0        4     4         ./src/Source/tasks.o:(.rodata.uxTopUsedPriority)
+    73f0     73f0        4     1                 uxTopUsedPriority
+    73f4     73f4        0     1         . = ALIGN ( 4 )
+    73f4     73f4        0     1         . = ALIGN ( 4 )
+    73f4     73f4        0     1         PROVIDE ( __preinit_array_start = . )
+    73f4     73f4        0     1         PROVIDE ( __preinit_array_end = . )
+    73f4     73f4        0     1         PROVIDE ( __init_array_start = . )
+    73f4     73f4        0     1         PROVIDE ( __init_array_end = . )
+    73f4     73f4        0     1         __erodata = .
  1010008  1010008        4     4 .option_secs
  1010008  1010008        4     4         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_option_settings.o:(.option_secs)
  1010008  1010008        4     1                 __SECSreg
@@ -7440,7 +7301,7 @@
 20006ffc 20006ffc        0     1 .stack
 20006ffc 20006ffc        0     1         PROVIDE ( __stack = . )
 20006ffc 20006ffc        0     1         
-       0        0     1ebc     1 .debug_abbrev
+       0        0     1ead     1 .debug_abbrev
        0        0       e4     1         ./src/smc_gen/r_pincfg/Pin.o:(.debug_abbrev)
       e4       e4      1fa     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_abbrev)
      2de      2de       5b     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_option_settings.o:(.debug_abbrev)
@@ -7475,12 +7336,12 @@
     149e     149e       ba     1         ./src/Source/list.o:(.debug_abbrev)
     1558     1558      2a5     1         ./src/Source/queue.o:(.debug_abbrev)
     17fd     17fd      364     1         ./src/Source/tasks.o:(.debug_abbrev)
-    1b61     1b61      194     1         ./src/Demo/blink/main.o:(.debug_abbrev)
-    1cf5     1cf5       98     1         ./src/Demo/Common/common.o:(.debug_abbrev)
-    1d8d     1d8d      110     1         ./src/Demo/Common/vector_table.o:(.debug_abbrev)
-    1e9d     1e9d       1f     1         ./src/Demo/Common/vector_table_asm.o:(.debug_abbrev)
-    1e9d     1e9d        0     1                 
-       0        0    3b756     1 .debug_info
+    1b61     1b61      185     1         ./src/Demo/blink/main.o:(.debug_abbrev)
+    1ce6     1ce6       98     1         ./src/Demo/Common/common.o:(.debug_abbrev)
+    1d7e     1d7e      110     1         ./src/Demo/Common/vector_table.o:(.debug_abbrev)
+    1e8e     1e8e       1f     1         ./src/Demo/Common/vector_table_asm.o:(.debug_abbrev)
+    1e8e     1e8e        0     1                 
+       0        0    3b6f4     1 .debug_info
        0        0     69ff     1         ./src/smc_gen/r_pincfg/Pin.o:(.debug_info)
     69ff     69ff     1d1b     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_info)
     871a     871a      10a     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_option_settings.o:(.debug_info)
@@ -7515,13 +7376,13 @@
    35e54    35e54      239     1         ./src/Source/list.o:(.debug_info)
    3608d    3608d     1839     1         ./src/Source/queue.o:(.debug_info)
    378c6    378c6     2623     1         ./src/Source/tasks.o:(.debug_info)
-   39ee9    39ee9     12d1     1         ./src/Demo/blink/main.o:(.debug_info)
-   3b1ba    3b1ba      106     1         ./src/Demo/Common/common.o:(.debug_info)
-   3b2c0    3b2c0      1af     1         ./src/Demo/Common/vector_table.o:(.debug_info)
-   3b46f    3b46f      2e7     1         ./src/Demo/Common/vector_table_asm.o:(.debug_info)
-   3b46f    3b46f        0     1                 
-       0        0     634c     1 .debug_str
-       0        0     634c     1         <internal>:(.debug_str)
+   39ee9    39ee9     12c3     1         ./src/Demo/blink/main.o:(.debug_info)
+   3b1ac    3b1ac      106     1         ./src/Demo/Common/common.o:(.debug_info)
+   3b2b2    3b2b2      1af     1         ./src/Demo/Common/vector_table.o:(.debug_info)
+   3b461    3b461      293     1         ./src/Demo/Common/vector_table_asm.o:(.debug_info)
+   3b461    3b461        0     1                 
+       0        0     634a     1 .debug_str
+       0        0     634a     1         <internal>:(.debug_str)
        0        0       5b     1 .comment
        0        0       5b     1         <internal>:(.comment)
        0        0       40     1 .riscv.attributes
@@ -7579,7 +7440,7 @@
     10d0     10d0        0     1                 
     1154     1154       44     4         ./src/Demo/Common/vector_table.o:(.debug_frame)
     1154     1154        0     1                 
-       0        0     ab50     1 .debug_line
+       0        0     a847     1 .debug_line
        0        0      234     1         ./src/smc_gen/r_pincfg/Pin.o:(.debug_line)
        0        0        0     1                 .Lline_table_start0
      234      234      5c6     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_line)
@@ -7638,14 +7499,14 @@
     4fd5     4fd5        0     1                 .Lline_table_start0
     6edb     6edb     2fb5     1         ./src/Source/tasks.o:(.debug_line)
     6edb     6edb        0     1                 .Lline_table_start0
-    9e90     9e90      32f     1         ./src/Demo/blink/main.o:(.debug_line)
+    9e90     9e90      30d     1         ./src/Demo/blink/main.o:(.debug_line)
     9e90     9e90        0     1                 .Lline_table_start0
-    a1bf     a1bf      115     1         ./src/Demo/Common/common.o:(.debug_line)
-    a1bf     a1bf        0     1                 .Lline_table_start0
-    a2d4     a2d4      251     1         ./src/Demo/Common/vector_table.o:(.debug_line)
-    a2d4     a2d4        0     1                 .Lline_table_start0
-    a525     a525      62b     1         ./src/Demo/Common/vector_table_asm.o:(.debug_line)
-    a525     a525        0     1                 .Lline_table_start0
+    a19d     a19d      115     1         ./src/Demo/Common/common.o:(.debug_line)
+    a19d     a19d        0     1                 .Lline_table_start0
+    a2b2     a2b2      251     1         ./src/Demo/Common/vector_table.o:(.debug_line)
+    a2b2     a2b2        0     1                 .Lline_table_start0
+    a503     a503      344     1         ./src/Demo/Common/vector_table_asm.o:(.debug_line)
+    a503     a503        0     1                 .Lline_table_start0
        0        0     45b0     1 .debug_loc
        0        0       77     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_loc)
        0        0        0     1                 
@@ -8107,7 +7968,7 @@
     456f     456f        0     1                 
     4595     4595       1b     1         ./src/Demo/blink/main.o:(.debug_loc)
     4595     4595        0     1                 
-       0        0      a40     1 .debug_ranges
+       0        0      a30     1 .debug_ranges
        0        0       28     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_ranges)
        0        0        0     1                 
       28       28       40     1         ./src/smc_gen/r_bsp/mcu/all/r_bsp_common.o:(.debug_ranges)
@@ -8177,21 +8038,21 @@
      9a8      9a8        0     1                 
      9e8      9e8       20     1         ./src/Demo/Common/vector_table.o:(.debug_ranges)
      9e8      9e8        0     1                 
-     a08      a08       38     1         ./src/Demo/Common/vector_table_asm.o:(.debug_ranges)
+     a08      a08       28     1         ./src/Demo/Common/vector_table_asm.o:(.debug_ranges)
      a08      a08        0     1                 
-       0        0       f0     1 .debug_aranges
+       0        0       e8     1 .debug_aranges
        0        0       20     1         ./src/smc_gen/r_bsp/mcu/all/exit.o:(.debug_aranges)
       20       20       20     1         ./src/smc_gen/r_bsp/mcu/all/machine_timer_aux.o:(.debug_aranges)
       40       40       20     1         ./src/smc_gen/r_bsp/mcu/all/r_bsp_common_llvm.o:(.debug_aranges)
       60       60       20     1         ./src/smc_gen/r_bsp/mcu/all/start.o:(.debug_aranges)
       80       80       40     1         ./src/Source/Portable/LLVM/portASM.o:(.debug_aranges)
-      c0       c0       30     1         ./src/Demo/Common/vector_table_asm.o:(.debug_aranges)
-       0        0    319a0     4 .symtab
-       0        0    319a0     4         <internal>:(.symtab)
+      c0       c0       28     1         ./src/Demo/Common/vector_table_asm.o:(.debug_aranges)
+       0        0    31160     4 .symtab
+       0        0    31160     4         <internal>:(.symtab)
        0        0      16c     1 .shstrtab
        0        0      16c     1         <internal>:(.shstrtab)
-       0        0     1be7     1 .strtab
-       0        0     1be7     1         <internal>:(.strtab)
+       0        0     1bad     1 .strtab
+       0        0     1bad     1         <internal>:(.strtab)
 
 Cross Reference Table
 
@@ -8547,7 +8408,6 @@ vApplicationTickHook                              ./src/Demo/Common/common.o
 freertos_renesas_risc_v_trap_handler              ./src/Demo/Common/vector_table_asm.o
                                                   ./src/Demo/Common/vector_table.o
 gp_Vectors                                        ./src/Demo/Common/vector_table.o
-freertos_renesas_risc_v_exception_handler         ./src/Demo/Common/vector_table_asm.o
 freertos_renesas_risc_v_application_exception_handler ./src/Demo/Common/vector_table_asm.o
 freertos_renesas_risc_v_application_interrupt_handler ./src/Demo/Common/vector_table_asm.o
 __preinit_array_start                             <internal>

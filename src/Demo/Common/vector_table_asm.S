@@ -1,6 +1,5 @@
 #include "portContext.h"
 
-.global freertos_renesas_risc_v_exception_handler
 .global freertos_renesas_risc_v_trap_handler
 
 .extern vTaskSwitchContext
@@ -62,26 +61,6 @@ freertos_renesas_risc_v_application_interrupt_handler:
     j .
 /*-----------------------------------------------------------*/
 
-.section .text.freertos_renesas_risc_v_exception_handler
-freertos_renesas_risc_v_exception_handler:
-    portcontextSAVE_CONTEXT_INTERNAL
-    csrr a0, mcause
-    and a0, a0, 0xff
-    csrr a1, mepc
-    addi a1, a1, 4
-    store_x a1, 0 ( sp )
-    load_x sp, xISRStackTop
-    /* a0 now contains mcause. */
-    li t0, 11                           /* 11 == environment call. */
-    bne a0, t0, other_exception         /* Not an M environment call, so some other exception. */
-    call vTaskSwitchContext
-    portcontextRESTORE_CONTEXT
-
-other_exception:
-    call freertos_renesas_risc_v_application_exception_handler
-    portcontextRESTORE_CONTEXT
-/*-----------------------------------------------------------*/
-
 .section .text.freertos_renesas_risc_v_trap_handler
 .align 8
 freertos_renesas_risc_v_trap_handler:
@@ -104,8 +83,6 @@ synchronous_exception:
     j handle_exception
 
 handle_interrupt:
-#if( portasmHAS_MTIME != 0 )
-
     test_if_mtimer:                     /* If there is a CLINT then the mtimer is used to generate the tick interrupt. */
         addi t0, x0, 1
         slli t0, t0, __riscv_xlen - 1   /* LSB is already set, shift into MSB.  Shift 31 on 32-bit or 63 on 64-bit cores. */
@@ -118,15 +95,14 @@ handle_interrupt:
         call vTaskSwitchContext
         j processed_source
 
-#endif /* portasmHAS_MTIME */
-
 application_interrupt_handler:
     call freertos_renesas_risc_v_application_interrupt_handler
     j processed_source
 
 handle_exception:
-    /* a0 contains mcause. */
-    and a0, a0, 0xff
+    /* Lower 16 bits of a0 contains exception code. */
+    li t0, 0xffff
+    and a0, a0, t0
     li t0, 11                                   /* 11 == environment call. */
     bne a0, t0, application_exception_handler   /* Not an M environment call, so some other exception. */
     call vTaskSwitchContext
