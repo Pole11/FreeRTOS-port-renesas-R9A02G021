@@ -208,11 +208,17 @@
         <Item allocate="31" bank="0" checked="false" id="IWDT_IWDT_NMIUNDF" priority="15"/>
     </tool>
     <tool id="Pins" version="1.0.1.0">
+        <pinItem allocation="19" comments="" direction="O" id="P304" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="20" comments="" direction="O" id="P305" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="15" comments="" direction="None" id="TCKC" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="21" comments="" direction="O" id="P207" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="35" comments="" direction="O" id="P104" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="25" comments="" direction="O" id="P100" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="38" comments="" direction="O" id="P107" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="16" comments="" direction="None" id="TMSC" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="3" comments="" direction="None" id="XT1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="2" comments="" direction="None" id="XT2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="40" comments="" direction="O" id="P402" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="23" comments="" direction="None" id="IRQ4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="48" comments="" direction="None" id="ANI0" isUsedBySoftware="true" locked="false" operationMode="" status="65280"/>
         <pinnumItem comment="PMOD2-IO3" id="22" symbolicname=""/>
@@ -425,12 +431,12 @@
                         </option>
                     </allocatable>
                     <allocatable id="P104">
-                        <option enabled="true" id="UseStatus" selection="Unuse">
+                        <option enabled="true" id="UseStatus" selection="Out">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
                             <item id="PullupUse" input="" vlaue="0"/>
                             <item id="PullupUnuse" input="" vlaue="0"/>
                         </option>
@@ -438,11 +444,11 @@
                             <item id="CMOSOutput" input="" vlaue="0"/>
                             <item id="NMOSOutput" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
                             <item id="Output1Use" input="" vlaue="0"/>
                             <item id="Output1Unuse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                        <option enabled="true" id="ELCOutput" selection="noeffect">
                             <item id="noeffect" input="" vlaue="0"/>
                             <item id="highout" input="" vlaue="0"/>
                             <item id="lowout" input="" vlaue="0"/>
@@ -515,12 +521,12 @@
                         </option>
                     </allocatable>
                     <allocatable id="P107">
-                        <option enabled="true" id="UseStatus" selection="Unuse">
+                        <option enabled="true" id="UseStatus" selection="Out">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
                             <item id="PullupUse" input="" vlaue="0"/>
                             <item id="PullupUnuse" input="" vlaue="0"/>
                         </option>
@@ -528,11 +534,11 @@
                             <item id="CMOSOutput" input="" vlaue="0"/>
                             <item id="NMOSOutput" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
                             <item id="Output1Use" input="" vlaue="0"/>
                             <item id="Output1Unuse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                        <option enabled="true" id="ELCOutput" selection="noeffect">
                             <item id="noeffect" input="" vlaue="0"/>
                             <item id="highout" input="" vlaue="0"/>
                             <item id="lowout" input="" vlaue="0"/>
@@ -666,22 +672,518 @@
                     </allocatable>
                 </allocatable>
                 <allocatable id="PORT2_Check">
-                    <option enabled="true" id="PortnEnable" selection="Disable">
+                    <option enabled="true" id="PortnEnable" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
                     </option>
+                </allocatable>
+                <allocatable id="PORT2_Chan">
+                    <allocatable id="P200">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P201">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P202">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P203">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P204">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P205">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P206">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P207">
+                        <option enabled="true" id="UseStatus" selection="Out">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="ELCOutput" selection="noeffect">
+                            <item id="noeffect" input="" vlaue="0"/>
+                            <item id="highout" input="" vlaue="0"/>
+                            <item id="lowout" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="ELCEdgeDetect" selection="donotcare">
+                            <item id="donotcare" input="" vlaue="0"/>
+                            <item id="rasingEdgeDetect" input="" vlaue="0"/>
+                            <item id="fallingEdgeDetect" input="" vlaue="0"/>
+                            <item id="bothEdgeDetect" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
                 </allocatable>
                 <allocatable id="PORT3_Check">
-                    <option enabled="true" id="PortnEnable" selection="Disable">
+                    <option enabled="true" id="PortnEnable" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
                     </option>
                 </allocatable>
+                <allocatable id="PORT3_Chan">
+                    <allocatable id="P300">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P301">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P302">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                            <item id="OutputCurrent" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="OutputCurrentSet" selection="2mA">
+                            <item id="2mA" input="" vlaue="0"/>
+                            <item id="5mA" input="" vlaue="0"/>
+                            <item id="10mA" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="OutputCurrentTrim" selection="level15">
+                            <item id="level15" input="" vlaue="0"/>
+                            <item id="level14" input="" vlaue="0"/>
+                            <item id="level13" input="" vlaue="0"/>
+                            <item id="level12" input="" vlaue="0"/>
+                            <item id="level11" input="" vlaue="0"/>
+                            <item id="level10" input="" vlaue="0"/>
+                            <item id="level9" input="" vlaue="0"/>
+                            <item id="level8" input="" vlaue="0"/>
+                            <item id="level7" input="" vlaue="0"/>
+                            <item id="level6" input="" vlaue="0"/>
+                            <item id="level5" input="" vlaue="0"/>
+                            <item id="level4" input="" vlaue="0"/>
+                            <item id="level3" input="" vlaue="0"/>
+                            <item id="level2" input="" vlaue="0"/>
+                            <item id="level1" input="" vlaue="0"/>
+                            <item id="level0" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P303">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                            <item id="OutputCurrent" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="OutputCurrentSet" selection="2mA">
+                            <item id="2mA" input="" vlaue="0"/>
+                            <item id="5mA" input="" vlaue="0"/>
+                            <item id="10mA" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="OutputCurrentTrim" selection="level15">
+                            <item id="level15" input="" vlaue="0"/>
+                            <item id="level14" input="" vlaue="0"/>
+                            <item id="level13" input="" vlaue="0"/>
+                            <item id="level12" input="" vlaue="0"/>
+                            <item id="level11" input="" vlaue="0"/>
+                            <item id="level10" input="" vlaue="0"/>
+                            <item id="level9" input="" vlaue="0"/>
+                            <item id="level8" input="" vlaue="0"/>
+                            <item id="level7" input="" vlaue="0"/>
+                            <item id="level6" input="" vlaue="0"/>
+                            <item id="level5" input="" vlaue="0"/>
+                            <item id="level4" input="" vlaue="0"/>
+                            <item id="level3" input="" vlaue="0"/>
+                            <item id="level2" input="" vlaue="0"/>
+                            <item id="level1" input="" vlaue="0"/>
+                            <item id="level0" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P304">
+                        <option enabled="true" id="UseStatus" selection="Out">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P305">
+                        <option enabled="true" id="UseStatus" selection="Out">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P306">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P307">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                </allocatable>
                 <allocatable id="PORT4_Check">
-                    <option enabled="true" id="PortnEnable" selection="Disable">
+                    <option enabled="true" id="PortnEnable" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
                     </option>
+                </allocatable>
+                <allocatable id="PORT4_Chan">
+                    <allocatable id="P400">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P401">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P402">
+                        <option enabled="true" id="UseStatus" selection="Out">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="P403">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
+                            <item id="Unuse" input="" vlaue="0"/>
+                            <item id="In" input="" vlaue="0"/>
+                            <item id="Out" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                            <item id="PullupUse" input="" vlaue="0"/>
+                            <item id="PullupUnuse" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Nch" selection="CMOSOutput">
+                            <item id="CMOSOutput" input="" vlaue="0"/>
+                            <item id="NMOSOutput" input="" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                            <item id="Output1Use" input="" vlaue="0"/>
+                            <item id="Output1Unuse" input="" vlaue="0"/>
+                        </option>
+                    </allocatable>
                 </allocatable>
                 <isocket id="IClock" selection="Clock.tool_clock_ICLK" value="4.8E7"/>
                 <isocket id="vddRange" selection="Clock.tool_clock_vddRange" value="2.7~5.5"/>

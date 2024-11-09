@@ -4,22 +4,34 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/Source/croutine.c \
+../src/Source/event_groups.c \
 ../src/Source/list.c \
 ../src/Source/queue.c \
-../src/Source/tasks.c 
+../src/Source/stream_buffer.c \
+../src/Source/tasks.c \
+../src/Source/timers.c 
 
 CREF += \
 FreeRTOS_port_prod2.cref 
 
 C_DEPS += \
+./src/Source/croutine.d \
+./src/Source/event_groups.d \
 ./src/Source/list.d \
 ./src/Source/queue.d \
-./src/Source/tasks.d 
+./src/Source/stream_buffer.d \
+./src/Source/tasks.d \
+./src/Source/timers.d 
 
 OBJS += \
+./src/Source/croutine.o \
+./src/Source/event_groups.o \
 ./src/Source/list.o \
 ./src/Source/queue.o \
-./src/Source/tasks.o 
+./src/Source/stream_buffer.o \
+./src/Source/tasks.o \
+./src/Source/timers.o 
 
 MAP += \
 FreeRTOS_port_prod2.map 

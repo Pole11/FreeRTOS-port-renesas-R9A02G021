@@ -164,7 +164,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="smc_gen/general/r_cg_vect_table.c|Source/Portable/MemMang/heap_5.c|Source/Portable/MemMang/heap_4.c|Source/Portable/MemMang/heap_3.c|Source/Portable/MemMang/heap_2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="Demo/blink/main.c|Demo/counter/main.c|smc_gen/general/r_cg_vect_table.c|Source/Portable/MemMang/heap_2.c|Source/Portable/MemMang/heap_3.c|Source/Portable/MemMang/heap_4.c|Source/Portable/MemMang/heap_5.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

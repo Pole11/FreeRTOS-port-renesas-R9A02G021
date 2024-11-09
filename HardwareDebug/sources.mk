@@ -57,7 +57,7 @@ S_UPPER_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 src/Demo/Common \
-src/Demo/blink \
+src/Demo/queue_test \
 src/Source/Portable/LLVM \
 src/Source/Portable/MemMang \
 src/Source \

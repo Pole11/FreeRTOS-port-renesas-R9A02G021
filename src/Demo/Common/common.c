@@ -37,3 +37,8 @@ void freertos_risc_v_application_interrupt_handler(void) {
 void freertos_risc_v_application_exception_handler(void) {
 
 }
+
+void machine_timer_enable(void) {
+    R_CPU_AUX->MACTCR_b.ENABLE = 1U;
+    R_CLIC->clicintie7_b.IE = 1U;    /* enable mtip interrupt */
+}

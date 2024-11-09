@@ -8,5 +8,6 @@
 #ifndef DEMO_COMMON_COMMON_H_
 #define DEMO_COMMON_COMMON_H_
 
+void machine_timer_enable(void);
 
 #endif /* DEMO_COMMON_COMMON_H_ */

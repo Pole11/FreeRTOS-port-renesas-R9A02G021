@@ -21,7 +21,7 @@ RM := rm -rf
 -include src/Source/Portable/MemMang/subdir.mk
 -include src/Source/Portable/LLVM/subdir.mk
 -include src/Source/subdir.mk
--include src/Demo/blink/subdir.mk
+-include src/Demo/queue_test/subdir.mk
 -include src/Demo/Common/subdir.mk
 -include src/subdir.mk
 -include subdir.mk

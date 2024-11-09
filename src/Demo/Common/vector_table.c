@@ -159,7 +159,8 @@ const void * gp_Vectors[] VECT_SECT = {
 /*
  * INT_IELSR4 (0x5C)
  */
-	freertos_risc_v_interrupt_handler,
+	//freertos_risc_v_interrupt_handler,
+	r_Config_ICU_irq4_interrupt,
 
 /*
  * INT_IELSR5 (0x60)

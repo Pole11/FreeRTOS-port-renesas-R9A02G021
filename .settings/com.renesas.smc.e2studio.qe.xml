@@ -4,13 +4,19 @@
         <Setting id="SrcGeneratedPath" value="src/smc_gen"/>
     </Segment>
     <Segment id="Pin">
+        <Setting id="P104" value="P104"/>
         <Setting id="P301" value="TMSC"/>
+        <Setting id="P304" value="P304"/>
+        <Setting id="P402" value="P402"/>
         <Setting id="P100" value="P100"/>
-        <Setting id="XT1" value="XT1"/>
         <Setting id="P300" value="TCKC"/>
         <Setting id="P002" value="ANI0"/>
-        <Setting id="XT2" value="XT2"/>
         <Setting id="P108" value="IRQ4"/>
+        <Setting id="P207" value="P207"/>
+        <Setting id="P107" value="P107"/>
+        <Setting id="P305" value="P305"/>
+        <Setting id="XT1" value="XT1"/>
+        <Setting id="XT2" value="XT2"/>
     </Segment>
     <Segment id="Device">
         <Setting id="Series" value="ASSP_EASY"/>
@@ -138,7 +144,7 @@
                 <Setting id="PortnEnable" value="Disable"/>
             </Segment>
             <Segment id="PORT3_Check">
-                <Setting id="PortnEnable" value="Disable"/>
+                <Setting id="PortnEnable" value="Enable"/>
             </Segment>
             <Segment id="PORT3_Chan">
                 <Segment id="P302">
@@ -156,7 +162,7 @@
                     <Setting id="Output1" value="Output1Unuse"/>
                 </Segment>
                 <Segment id="P304">
-                    <Setting id="UseStatus" value="Unuse"/>
+                    <Setting id="UseStatus" value="Out"/>
                     <Setting id="Nch" value="CMOSOutput"/>
                     <Setting id="Pullup" value="PullupUnuse"/>
                     <Setting id="Output1" value="Output1Unuse"/>
@@ -182,7 +188,7 @@
                     <Setting id="Output1" value="Output1Unuse"/>
                 </Segment>
                 <Segment id="P305">
-                    <Setting id="UseStatus" value="Unuse"/>
+                    <Setting id="UseStatus" value="Out"/>
                     <Setting id="Nch" value="CMOSOutput"/>
                     <Setting id="Pullup" value="PullupUnuse"/>
                     <Setting id="Output1" value="Output1Unuse"/>
@@ -255,7 +261,7 @@
             <Segment id="PORT1_Chan">
                 <Segment id="P104">
                     <Setting id="ELCEdgeDetect" value="donotcare"/>
-                    <Setting id="UseStatus" value="Unuse"/>
+                    <Setting id="UseStatus" value="Out"/>
                     <Setting id="Nch" value="CMOSOutput"/>
                     <Setting id="Pullup" value="PullupUnuse"/>
                     <Setting id="Output1" value="Output1Unuse"/>
@@ -337,7 +343,7 @@
                 </Segment>
                 <Segment id="P107">
                     <Setting id="ELCEdgeDetect" value="donotcare"/>
-                    <Setting id="UseStatus" value="Unuse"/>
+                    <Setting id="UseStatus" value="Out"/>
                     <Setting id="Nch" value="CMOSOutput"/>
                     <Setting id="Pullup" value="PullupUnuse"/>
                     <Setting id="Output1" value="Output1Unuse"/>
@@ -402,7 +408,7 @@
                 </Segment>
                 <Segment id="P207">
                     <Setting id="ELCEdgeDetect" value="donotcare"/>
-                    <Setting id="UseStatus" value="Unuse"/>
+                    <Setting id="UseStatus" value="Out"/>
                     <Setting id="Nch" value="CMOSOutput"/>
                     <Setting id="Pullup" value="PullupUnuse"/>
                     <Setting id="Output1" value="Output1Unuse"/>
@@ -435,17 +441,17 @@
                     <Setting id="Output1" value="Output1Unuse"/>
                 </Segment>
                 <Segment id="P402">
-                    <Setting id="UseStatus" value="Unuse"/>
+                    <Setting id="UseStatus" value="Out"/>
                     <Setting id="Nch" value="CMOSOutput"/>
                     <Setting id="Pullup" value="PullupUnuse"/>
                     <Setting id="Output1" value="Output1Unuse"/>
                 </Segment>
             </Segment>
             <Segment id="PORT4_Check">
-                <Setting id="PortnEnable" value="Disable"/>
+                <Setting id="PortnEnable" value="Enable"/>
             </Segment>
             <Segment id="PORT2_Check">
-                <Setting id="PortnEnable" value="Disable"/>
+                <Setting id="PortnEnable" value="Enable"/>
             </Segment>
         </Segment>
     </Segment>
