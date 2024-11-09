@@ -1891,7 +1891,7 @@
     20c6     20c6        2     1                 vPortEndScheduler
     20c8     20c8        0     1                 
     20c8     20c8        0     1                 
-    20c8     20c8      14a     1         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_exception_handler)
+    20c8     20c8      146     1         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_exception_handler)
     20c8     20c8        0     1                 
     20c8     20c8        0     1                 
     20c8     20c8        0     1                 freertos_risc_v_exception_handler
@@ -1934,24 +1934,25 @@
     2120     2120        0     1                 
     2124     2124        0     1                 
     2128     2128        0     1                 
+    212a     212a        0     1                 
+    212c     212c        0     1                 .Lpcrel_hi5
     212c     212c        0     1                 
-    212e     212e        0     1                 
-    2130     2130        0     1                 .Lpcrel_hi5
-    2130     2130        0     1                 
-    2138     2138        0     1                 
+    2134     2134        0     1                 
+    2136     2136        0     1                 
     213a     213a        0     1                 
+    213e     213e        0     1                 .Lpcrel_hi6
     213e     213e        0     1                 
-    2142     2142        0     1                 .Lpcrel_hi6
-    2142     2142        0     1                 
+    2146     2146        0     1                 
     214a     214a        0     1                 
-    214e     214e        0     1                 
+    214c     214c        0     1                 
     2150     2150        0     1                 
-    2154     2154        0     1                 
+    2152     2152        0     1                 
     2156     2156        0     1                 
-    215a     215a        0     1                 
-    215c     215c        0     1                 .Lpcrel_hi7
-    215c     215c        0     1                 
+    2158     2158        0     1                 .Lpcrel_hi7
+    2158     2158        0     1                 
+    2160     2160        0     1                 
     2164     2164        0     1                 
+    2166     2166        0     1                 
     2168     2168        0     1                 
     216a     216a        0     1                 
     216c     216c        0     1                 
@@ -1979,23 +1980,23 @@
     2198     2198        0     1                 
     219a     219a        0     1                 
     219c     219c        0     1                 
-    219e     219e        0     1                 
     21a0     21a0        0     1                 
+    21a4     21a4        0     1                 other_exception
     21a4     21a4        0     1                 
-    21a8     21a8        0     1                 other_exception
+    21a4     21a4        0     1                 
+    21a8     21a8        0     1                 .Lpcrel_hi8
     21a8     21a8        0     1                 
-    21a8     21a8        0     1                 
-    21ac     21ac        0     1                 .Lpcrel_hi8
-    21ac     21ac        0     1                 
+    21b0     21b0        0     1                 
     21b4     21b4        0     1                 
-    21b8     21b8        0     1                 
+    21b6     21b6        0     1                 
     21ba     21ba        0     1                 
-    21be     21be        0     1                 
+    21bc     21bc        0     1                 
     21c0     21c0        0     1                 
-    21c4     21c4        0     1                 
-    21c6     21c6        0     1                 .Lpcrel_hi9
-    21c6     21c6        0     1                 
+    21c2     21c2        0     1                 .Lpcrel_hi9
+    21c2     21c2        0     1                 
+    21ca     21ca        0     1                 
     21ce     21ce        0     1                 
+    21d0     21d0        0     1                 
     21d2     21d2        0     1                 
     21d4     21d4        0     1                 
     21d6     21d6        0     1                 
@@ -2023,14 +2024,14 @@
     2202     2202        0     1                 
     2204     2204        0     1                 
     2206     2206        0     1                 
-    2208     2208        0     1                 
     220a     220a        0     1                 
     220e     220e        0     1                 
+    220e     220e       d4     1         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_interrupt_handler)
+    220e     220e        0     1                 
+    220e     220e        0     1                 
+    220e     220e        0     1                 freertos_risc_v_interrupt_handler
     2212     2212        0     1                 
-    2212     2212       d4     1         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_interrupt_handler)
-    2212     2212        0     1                 
-    2212     2212        0     1                 
-    2212     2212        0     1                 freertos_risc_v_interrupt_handler
+    2214     2214        0     1                 
     2216     2216        0     1                 
     2218     2218        0     1                 
     221a     221a        0     1                 
@@ -2057,33 +2058,33 @@
     2244     2244        0     1                 
     2246     2246        0     1                 
     2248     2248        0     1                 
+    224a     224a        0     1                 .Lpcrel_hi10
     224a     224a        0     1                 
-    224c     224c        0     1                 
-    224e     224e        0     1                 .Lpcrel_hi10
-    224e     224e        0     1                 
-    2256     2256        0     1                 
+    2252     2252        0     1                 
+    2254     2254        0     1                 
     2258     2258        0     1                 
-    225c     225c        0     1                 
-    225e     225e        0     1                 .Lpcrel_hi11
-    225e     225e        0     1                 
+    225a     225a        0     1                 .Lpcrel_hi11
+    225a     225a        0     1                 
+    2262     2262        0     1                 
     2266     2266        0     1                 
     226a     226a        0     1                 
     226e     226e        0     1                 
-    2272     2272        0     1                 
-    2274     2274        0     1                 .Lpcrel_hi12
-    2274     2274        0     1                 
+    2270     2270        0     1                 .Lpcrel_hi12
+    2270     2270        0     1                 
+    2278     2278        0     1                 
+    227c     227c        0     1                 .Lpcrel_hi13
     227c     227c        0     1                 
-    2280     2280        0     1                 .Lpcrel_hi13
-    2280     2280        0     1                 
+    2284     2284        0     1                 
     2288     2288        0     1                 
-    228c     228c        0     1                 
+    228a     228a        0     1                 
     228e     228e        0     1                 
-    2292     2292        0     1                 
+    2290     2290        0     1                 
     2294     2294        0     1                 
-    2298     2298        0     1                 
-    229a     229a        0     1                 .Lpcrel_hi14
-    229a     229a        0     1                 
+    2296     2296        0     1                 .Lpcrel_hi14
+    2296     2296        0     1                 
+    229e     229e        0     1                 
     22a2     22a2        0     1                 
+    22a4     22a4        0     1                 
     22a6     22a6        0     1                 
     22a8     22a8        0     1                 
     22aa     22aa        0     1                 
@@ -2111,14 +2112,14 @@
     22d6     22d6        0     1                 
     22d8     22d8        0     1                 
     22da     22da        0     1                 
-    22dc     22dc        0     1                 
     22de     22de        0     1                 
     22e2     22e2        0     1                 
+    22e2     22e2      110     1         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_mtimer_interrupt_handler)
+    22e2     22e2        0     1                 
+    22e2     22e2        0     1                 
+    22e2     22e2        0     1                 freertos_risc_v_mtimer_interrupt_handler
     22e6     22e6        0     1                 
-    22e6     22e6      110     1         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_mtimer_interrupt_handler)
-    22e6     22e6        0     1                 
-    22e6     22e6        0     1                 
-    22e6     22e6        0     1                 freertos_risc_v_mtimer_interrupt_handler
+    22e8     22e8        0     1                 
     22ea     22ea        0     1                 
     22ec     22ec        0     1                 
     22ee     22ee        0     1                 
@@ -2145,54 +2146,54 @@
     2318     2318        0     1                 
     231a     231a        0     1                 
     231c     231c        0     1                 
+    231e     231e        0     1                 .Lpcrel_hi15
     231e     231e        0     1                 
-    2320     2320        0     1                 
-    2322     2322        0     1                 .Lpcrel_hi15
-    2322     2322        0     1                 
-    232a     232a        0     1                 
+    2326     2326        0     1                 
+    2328     2328        0     1                 
     232c     232c        0     1                 
-    2330     2330        0     1                 
-    2332     2332        0     1                 .Lpcrel_hi16
-    2332     2332        0     1                 
+    232e     232e        0     1                 .Lpcrel_hi16
+    232e     232e        0     1                 
+    2336     2336        0     1                 
     233a     233a        0     1                 
     233e     233e        0     1                 
     2342     2342        0     1                 
-    2346     2346        0     1                 
-    2348     2348        0     1                 .Lpcrel_hi17
-    2348     2348        0     1                 
-    2350     2350        0     1                 .Lpcrel_hi18
-    2350     2350        0     1                 
-    2358     2358        0     1                 .Lpcrel_hi19
-    2358     2358        0     1                 
+    2344     2344        0     1                 .Lpcrel_hi17
+    2344     2344        0     1                 
+    234c     234c        0     1                 .Lpcrel_hi18
+    234c     234c        0     1                 
+    2354     2354        0     1                 .Lpcrel_hi19
+    2354     2354        0     1                 
+    235c     235c        0     1                 
+    235e     235e        0     1                 
     2360     2360        0     1                 
     2362     2362        0     1                 
     2364     2364        0     1                 
     2366     2366        0     1                 
+    2368     2368        0     1                 .Lpcrel_hi20
     2368     2368        0     1                 
-    236a     236a        0     1                 
-    236c     236c        0     1                 .Lpcrel_hi20
-    236c     236c        0     1                 
+    2370     2370        0     1                 
     2374     2374        0     1                 
     2378     2378        0     1                 
     237c     237c        0     1                 
-    2380     2380        0     1                 
+    237e     237e        0     1                 
     2382     2382        0     1                 
     2386     2386        0     1                 
-    238a     238a        0     1                 
+    2388     2388        0     1                 
+    238c     238c        0     1                 exit_without_context_switch
     238c     238c        0     1                 
-    2390     2390        0     1                 exit_without_context_switch
-    2390     2390        0     1                 
-    2390     2390        0     1                 .Lpcrel_hi21
-    2390     2390        0     1                 
+    238c     238c        0     1                 .Lpcrel_hi21
+    238c     238c        0     1                 
+    2394     2394        0     1                 
     2398     2398        0     1                 
-    239c     239c        0     1                 
+    239a     239a        0     1                 
     239e     239e        0     1                 
-    23a2     23a2        0     1                 
+    23a0     23a0        0     1                 
     23a4     23a4        0     1                 
-    23a8     23a8        0     1                 
-    23aa     23aa        0     1                 .Lpcrel_hi22
-    23aa     23aa        0     1                 
+    23a6     23a6        0     1                 .Lpcrel_hi22
+    23a6     23a6        0     1                 
+    23ae     23ae        0     1                 
     23b2     23b2        0     1                 
+    23b4     23b4        0     1                 
     23b6     23b6        0     1                 
     23b8     23b8        0     1                 
     23ba     23ba        0     1                 
@@ -2220,10 +2221,8 @@
     23e6     23e6        0     1                 
     23e8     23e8        0     1                 
     23ea     23ea        0     1                 
-    23ec     23ec        0     1                 
     23ee     23ee        0     1                 
     23f2     23f2        0     1                 
-    23f6     23f6        0     1                 
     2400     2400      14e   256         ./src/Source/Portable/LLVM/portASM.o:(.text.freertos_risc_v_trap_handler)
     2400     2400        0     1                 
     2400     2400        0     1                 
@@ -9875,7 +9874,7 @@
     16dc     16dc        0     1                 
     1770     1770       44     4         ./src/Demo/Common/vector_table.o:(.debug_frame)
     1770     1770        0     1                 
-       0        0     dc84     1 .debug_line
+       0        0     dc7e     1 .debug_line
        0        0      234     1         ./src/smc_gen/r_pincfg/Pin.o:(.debug_line)
        0        0        0     1                 .Lline_table_start0
      234      234      5c6     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_line)
@@ -9926,28 +9925,28 @@
     390d     390d        0     1                 .Lline_table_start0
     3d3a     3d3a      35a     1         ./src/Source/Portable/LLVM/port.o:(.debug_line)
     3d3a     3d3a        0     1                 .Lline_table_start0
-    4094     4094      bc4     1         ./src/Source/Portable/LLVM/portASM.o:(.debug_line)
+    4094     4094      bbe     1         ./src/Source/Portable/LLVM/portASM.o:(.debug_line)
     4094     4094        0     1                 .Lline_table_start0
-    4c58     4c58      96d     1         ./src/Source/event_groups.o:(.debug_line)
-    4c58     4c58        0     1                 .Lline_table_start0
-    55c5     55c5      407     1         ./src/Source/list.o:(.debug_line)
-    55c5     55c5        0     1                 .Lline_table_start0
-    59cc     59cc     200d     1         ./src/Source/queue.o:(.debug_line)
-    59cc     59cc        0     1                 .Lline_table_start0
-    79d9     79d9     1584     1         ./src/Source/stream_buffer.o:(.debug_line)
-    79d9     79d9        0     1                 .Lline_table_start0
-    8f5d     8f5d     3099     1         ./src/Source/tasks.o:(.debug_line)
-    8f5d     8f5d        0     1                 .Lline_table_start0
-    bff6     bff6      f90     1         ./src/Source/timers.o:(.debug_line)
-    bff6     bff6        0     1                 .Lline_table_start0
-    cf86     cf86      4a1     1         ./src/Demo/queue_test/main.o:(.debug_line)
-    cf86     cf86        0     1                 .Lline_table_start0
-    d427     d427      2c8     1         ./src/Demo/Common/common.o:(.debug_line)
-    d427     d427        0     1                 .Lline_table_start0
-    d6ef     d6ef      251     1         ./src/Demo/Common/vector_table.o:(.debug_line)
-    d6ef     d6ef        0     1                 .Lline_table_start0
-    d940     d940      344     1         ./src/Demo/Common/vector_table_asm.o:(.debug_line)
-    d940     d940        0     1                 .Lline_table_start0
+    4c52     4c52      96d     1         ./src/Source/event_groups.o:(.debug_line)
+    4c52     4c52        0     1                 .Lline_table_start0
+    55bf     55bf      407     1         ./src/Source/list.o:(.debug_line)
+    55bf     55bf        0     1                 .Lline_table_start0
+    59c6     59c6     200d     1         ./src/Source/queue.o:(.debug_line)
+    59c6     59c6        0     1                 .Lline_table_start0
+    79d3     79d3     1584     1         ./src/Source/stream_buffer.o:(.debug_line)
+    79d3     79d3        0     1                 .Lline_table_start0
+    8f57     8f57     3099     1         ./src/Source/tasks.o:(.debug_line)
+    8f57     8f57        0     1                 .Lline_table_start0
+    bff0     bff0      f90     1         ./src/Source/timers.o:(.debug_line)
+    bff0     bff0        0     1                 .Lline_table_start0
+    cf80     cf80      4a1     1         ./src/Demo/queue_test/main.o:(.debug_line)
+    cf80     cf80        0     1                 .Lline_table_start0
+    d421     d421      2c8     1         ./src/Demo/Common/common.o:(.debug_line)
+    d421     d421        0     1                 .Lline_table_start0
+    d6e9     d6e9      251     1         ./src/Demo/Common/vector_table.o:(.debug_line)
+    d6e9     d6e9        0     1                 .Lline_table_start0
+    d93a     d93a      344     1         ./src/Demo/Common/vector_table_asm.o:(.debug_line)
+    d93a     d93a        0     1                 .Lline_table_start0
        0        0     70f3     1 .debug_loc
        0        0       77     1         ./src/smc_gen/r_bsp/mcu/r9a02g021/mcu_clocks.o:(.debug_loc)
        0        0        0     1                 
@@ -10789,8 +10788,8 @@
       60       60       20     1         ./src/smc_gen/r_bsp/mcu/all/start.o:(.debug_aranges)
       80       80       40     1         ./src/Source/Portable/LLVM/portASM.o:(.debug_aranges)
       c0       c0       28     1         ./src/Demo/Common/vector_table_asm.o:(.debug_aranges)
-       0        0    3db10     4 .symtab
-       0        0    3db10     4         <internal>:(.symtab)
+       0        0    3db00     4 .symtab
+       0        0    3db00     4         <internal>:(.symtab)
        0        0      16c     1 .shstrtab
        0        0      16c     1         <internal>:(.shstrtab)
        0        0     2166     1 .strtab
