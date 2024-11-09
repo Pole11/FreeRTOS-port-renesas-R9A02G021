@@ -8,14 +8,15 @@ This is a port of FreeRTOS on the Renesas RISC-V MCU. In particular I have acces
 	- `src/smc_gen/general/r_cg_vect_table.c`
 	- all except one of the files in `src/Source/Portable/MemMang` 
 	- all except one of the `src/Demo/*/main.c`
-		- demos needs the pins to be configured, the best way is to use the Smart Configurator: click on the **Pin** tab and retrieve the pin number from the flyer given (you can also find it on the official website of Renesas) and set the correct pin to output
+		- demos need the pins to be configured, the best way is to use the Smart Configurator: click on the **Pin** tab and retrieve the pin number from the flyer given (you can also find it on the official website of Renesas) and set the correct pin to output
 - Add as includes to the compiler (add to the default ones):
 	- `src/Demo/Common`
 	- `src/Demo`
 	- `src/Source/Portable/LLVM` 
 	- `src/Source/include` 
 - Add as includes to the assembler (add to the default ones):
-	- `src/Source/Portable/LLVM` 
+	- `src/Source/Portable/LLVM`
+ - Enable the machine timer from the Smart Configurator
 
 ## I want to add an interrupt handler for a button/pin/adc/...
 
