@@ -24,6 +24,8 @@ Add the name of the handler in `src/Demo/Common/vector_table.c` in the right pos
 
 Then you also need to initialise the hardware. Regarding this, look into the Smart Configurator and the official documentation (you can find it in `src/smc_gen/r_bsp/doc/en/*.pdf`.
 
+NB: if you do not like this approach, you can use keep the vector table as is and modify the code in the `freertos_risc_v_application_exception_handler`.
+
 ## Facts that might interest you
 
 - Fact 1: changing the configuration defined in the headers does not affect the speed at which interrupts are fired. This is handled by the FreeRTOS port. 
