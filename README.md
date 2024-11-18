@@ -37,6 +37,15 @@ Sorry, but I preferred to keep it simple.
 - Fact 1: Changing the configuration defined in the headers does not affect the speed at which interrupts are fired. This is handled by the FreeRTOS port. 
 - Fact 2: Call the `machine_timer_enable()` in the hardware initialisation phase.
 - Fact 3: This board supports different clock speeds. Currently, the value 48000000 is hard-coded inside the FreeRTOS configuration file (you can find it in the Demo folder). If you change the clock value of the board, remember to also change the value there. As far as I know FreeRTOS does not support changing clock frequency at runtime, but this can be easily implemented at will. If so, you will need to look at the Renesas documentation to get the function name to gather the running clock frequency.
+
+# What I have done to make it work
+
+- fixed alignment in linker script (0.1h)
+- populated `FreeRTOSConfig.h` (1h)
+- modified interrupt and exception handling functions to be naked and don't have any prologue or epilogue (8h)
+- properly populated interrupt vector table (2h)
+- masked `mcause` to make it contain only the offset for the interrupt vector table (20h)
+- test (5h)
  
 # FreeRTOS License
 
