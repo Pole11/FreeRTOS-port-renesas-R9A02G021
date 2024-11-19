@@ -4,6 +4,7 @@ This is a port of FreeRTOS on the Renesas RISC-V MCU. In particular I have acces
 
 # How to replicate
 
+Using the IDE:
 - Exclude from the build:
 	- `src/smc_gen/general/r_cg_vect_table.c`
 	- all except one of the files in `src/Source/Portable/MemMang` 
@@ -16,7 +17,12 @@ This is a port of FreeRTOS on the Renesas RISC-V MCU. In particular I have acces
 	- `src/Source/include` 
 - Add as includes to the assembler (add to the default ones):
 	- `src/Source/Portable/LLVM`
- - Enable the machine timer from the Smart Configurator
+- (Enable the machine timer from the Smart Configurator)
+
+Without using the IDE:
+- Install the toolchain from https://llvm-gcc-renesas.com/riscv/riscv-download-toolchains/ 
+- Paste the path to `bin/clang` of the toolchain inside the makefile. Change the variables `CC`, `AS` and `LD`.
+- `make`
 
 ## I want to add an interrupt handler for a button/pin/adc/...
 
