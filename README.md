@@ -18,11 +18,13 @@ Using the IDE:
 - Add as includes to the assembler (add to the default ones):
 	- `src/Source/Portable/LLVM`
 - (Enable the machine timer from the Smart Configurator)
+- To flash use the run or debug button
 
 Without using the IDE:
 - Install the toolchain from https://llvm-gcc-renesas.com/riscv/riscv-download-toolchains/ 
 - Paste the path to `bin/clang` of the toolchain inside the makefile. Change the variables `CC`, `AS` and `LD`.
 - `make`
+- To flash use the Rensas flasher https://www.renesas.com/en/software-tool/renesas-flash-programmer-programming-gui
 
 ## I want to add an interrupt handler for a button/pin/adc/...
 
