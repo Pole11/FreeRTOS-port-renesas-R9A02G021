@@ -7,7 +7,7 @@ This is a port of FreeRTOS on the Renesas RISC-V MCU. In particular I have acces
 Using the IDE:
 - Exclude from the build:
 	- `src/smc_gen/general/r_cg_vect_table.c`
-	- all except one of the files in `src/Source/Portable/MemMang` 
+	- all except one of the files in `src/Source/Portable/MemMang` (**note**: after some tests I recently conducted, `heap_1` does not seem to be able to free memory, so it's usage on this board is not advisable)
 	- all except one of the `src/Demo/*/main.c`
 		- demos need the pins to be configured, the best way is to use the Smart Configurator: click on the **Pin** tab and retrieve the pin number from the flyer given (you can also find it on the official website of Renesas) and set the correct pin to output
 - Add as includes to the compiler (add to the default ones):
